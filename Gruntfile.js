@@ -93,10 +93,10 @@ module.exports = function( grunt ) {
 
         uglify: {
             prod: {
-                files: grunt.file.expandMapping(['js/#APPDIR#/*.js'], 'js/#APPDIR#/build/', {
+                files: grunt.file.expandMapping(['js/si/*.js'], 'js/si/build/', {
                     rename: function( destBase, destPath ) {
                         var fName = destPath.replace( '.js', '.min.js' );
-                        fName = fName.substring( fName.indexOf( '#APPDIR#/' ) + 3 );
+                        fName = fName.substring( fName.indexOf( 'si/' ) + 3 );
                         fName = destBase + fName;
                         return fName;
                     }

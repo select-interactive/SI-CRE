@@ -1,6 +1,6 @@
 ﻿{
-  "name": "Project-Name",
-  "appDir": "app",
+  "name": "SI-CRE",
+  "appDir": "SI",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-compass": "~0.7.2",
