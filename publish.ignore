@@ -1,0 +1,16 @@
+# You can declare files/folders that should be ignored here. For example
+
+# Folders to Ignore #
+.sass-cache/
+node_modules/
+
+# Files to Ignore #
+*.wpp.targets
+.bowerrc
+.gitignore
+bower.json
+Grunftile.js
+package.json
+packages.config
+publish.ignore
+website.publishproj

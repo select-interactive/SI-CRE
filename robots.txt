@@ -1,0 +1,10 @@
+# www.robotstxt.org/
+
+User-agent: *
+Disallow: /.sass-cache/
+Disallow: /bin/
+Disallow: /controls/
+Disallow: /css/
+Disallow: /js/
+Disallow: /masterpages/
+Disallow: /node_modules/

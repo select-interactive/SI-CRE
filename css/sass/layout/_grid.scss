@@ -1,0 +1,100 @@
+﻿// -------------------------------------------
+// Border Box - Padding not included in width.
+// -------------------------------------------
+* { @include box-sizing(border-box); }
+
+
+// -----------------------
+// Media Query Breakpoints
+// -----------------------
+$bp-massive:	1800px;
+$bp-xwide:		1400px;
+$bp-wide:		1200px;
+$bp-large:		1024px;
+$bp-tablet:		768px;
+$bp-mbl-bigger: 550px;
+$bp-phone-land: 480px;
+$bp-phone-port: 320px;
+
+
+// -------------
+// Media Queries
+// -------------
+@mixin mediaquery($point) {
+
+	// Very large screens 1800px +
+	@if $point == massive {
+		@media (min-width: $bp-massive / $base-font-size + 'em') { @content; }
+	}
+
+	// Extra wide screens 1400px+
+	@if $point == xwide {
+		@media (min-width: $bp-xwide / $base-font-size + 'em') { @content; }
+	}
+
+	// Wide screens 1200px+
+	@if $point == wide {
+		@media (min-width: $bp-wide / $base-font-size + 'em') { @content; }
+	}
+
+	// computer/laptop and up 1025px+
+	@if $point == comp {
+		@media (min-width: ($bp-large + 1) / $base-font-size + 'em') { @content; }
+	}
+
+	// landscape tablet and up 1024px+
+	@if $point == large {
+		@media (min-width: $bp-large / $base-font-size + 'em') { @content; }
+	}
+
+	// portrait tablets and up 768+
+	@if $point == tabletPlus {
+		@media (min-width: $bp-tablet / $base-font-size + 'em') { @content; }
+	}
+
+	// small screens - tablet/phone 1023px-
+	@if $point == mobile {
+		@media (max-width: ($bp-large - 1) / $base-font-size + 'em') { @content; }
+	}
+
+	// Retina Screens
+	@if $point == retina {
+		@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) { @content; }
+	}
+}
+
+
+// -----------
+// mobile only
+// -----------
+.mbl-only {
+	@include mediaquery(large) {
+		display: none !important;
+	}
+}
+
+
+// ----------------------------
+// Not to be included on mobile
+// ----------------------------
+.no-mbl {
+	@include mediaquery(mobile) {
+		display: none !important;
+	}
+}
+
+
+// ---------------------
+// Rows/Columns/Clearfix
+// ---------------------
+.clearfix,
+.row { @extend %clearfix; }
+
+
+// ---------
+// Row class
+// ---------
+.row { 
+	@extend %no-margin;
+	@extend %no-padding;
+}
