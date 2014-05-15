@@ -4,7 +4,8 @@
 #contentWrapper {
 	padding-top: 80px;
 
-	&.home {
+	&.home,
+	&.about {
 		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp');
 		background-attachment: fixed;
 		background-position: center 80px;
@@ -19,6 +20,22 @@
 
 			.no-webp & {
 				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg');
+			}
+		}
+	}
+
+	&.about {
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.webp');
+
+		.no-webp & {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.jpg');
+		}
+
+		@include mediaquery(massive) {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.webp');
+
+			.no-webp & {
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.jpg');
 			}
 		}
 	}

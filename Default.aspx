@@ -14,7 +14,7 @@
             <div class="slide slide-center">
                 <div class="copy copy-narrow text-center">
                     <h2 class="heading heading-primary">Why does your building<br />need a website?</h2>
-                    <h3 class="heading heading-subtitle">It&rsquo;s the first impression potential tenants or buyers have of the property before they set foot on it. As an owner or marketing representative of a commercial real estate property, what does your website communicate about your asset? Are you trying to attract new tenants? Provide a portal to service your existing tenants? Are you looking to present your property to prospective buyers?</h3>
+                    <h3 class="heading heading-subtitle">It&rsquo;s the first impression potential tenants or buyers have of the property before they set foot in it. As an owner or marketing representative of a commercial real estate property, what does your website communicate about your asset and how does it distinguish it? Are you trying to attract new tenants? Provide a portal to service your existing tenants? Are you looking to present your property to prospective buyers?</h3>
                 </div>
             </div>
             <div class="slide slide-right">
@@ -61,7 +61,7 @@
     <div class="container-full-width container-vert-padding container-bg-city container-bg-austin">
         <div class="copy copy-med text-center text-larger">
             <h3 class="heading heading-secondary">A Website Development Firm<br />That Knows Commercial Real Estate</h3>
-            <p >Select Interactive specializes in the design and development of commercial real estate projects. Our team specializes in designs that clearly communicate your message to your target audience. Our engineers understand how viewers interact with the information on your site, and excel at implementing the best user experience possible.</p>
+            <p >Select Interactive specializes in the design and development of commercial real estate websites. We create designs that clearly communicate your message to the target audience, while also leaving them with a positive feeling of your building. Our engineers understand how viewers interact with the information, and excel at implementing the best user experience possible.</p>
         </div>
     </div>
     <div class="container-full-width container-vert-padding container-bg-gray-light">

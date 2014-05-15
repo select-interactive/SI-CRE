@@ -31,6 +31,15 @@
 	// ----------------
 	// Container Colors
 	// ----------------
+	@include child(bg-white) {
+		background: $white;
+		color: $si-gray-darkest;
+
+		a {
+			@include link-colors($si-gray-lightest, $si-gray-lightest, $si-gray-lightest);
+		}
+	}
+
 	@include child(bg-gray-light) {
 		background: $si-gray-lightest;
 		color: $si-gray-darkest;
@@ -72,7 +81,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 450px;
+		min-height: 350px;
 	}
 
 	@include child(bg-austin) {
@@ -97,9 +106,29 @@
 	// ----------------
 	// Container Layout
 	// ----------------
+	@include child(cols-2) {
+		.col {
+			&:first-child {
+				@include span(7);
+			}
+
+			&:nth-child(2n) {
+				@include span(5);
+			}
+		}
+	}
+
 	@include child(cols-3) {
 		.col {
 			@include span(4);
+		}
+	}
+
+	.border-right {
+		border-right: 1px solid $white;
+
+		@include child(orange) {
+			border-right-color: $si-orange;
 		}
 	}
 }

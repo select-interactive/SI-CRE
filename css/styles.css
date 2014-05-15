@@ -3672,28 +3672,46 @@ a:hover {
   padding-top: 80px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\000037}}
-#contentWrapper.home {
+#contentWrapper.home, #contentWrapper.about {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp");
   background-attachment: fixed;
   background-position: center 80px;
   background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000313}}
-.no-webp #contentWrapper.home {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000314}}
+.no-webp #contentWrapper.home, .no-webp #contentWrapper.about {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg");
 }
 @media (min-width: 125em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\000037}}
-  #contentWrapper.home {
+  #contentWrapper.home, #contentWrapper.about {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp");
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000320}}
-  .no-webp #contentWrapper.home {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000321}}
+  .no-webp #contentWrapper.home, .no-webp #contentWrapper.about {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg");
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000327}}
+#contentWrapper.about {
+  background-image: url("//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.webp");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000330}}
+.no-webp #contentWrapper.about {
+  background-image: url("//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.jpg");
+}
+@media (min-width: 125em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000327}}
+  #contentWrapper.about {
+    background-image: url("//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.webp");
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000337}}
+  .no-webp #contentWrapper.about {
+    background-image: url("//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.jpg");
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000348}}
 .copy {
   margin-left: auto;
   margin-right: auto;
@@ -3706,13 +3724,13 @@ a:hover {
 .copy-med {
   max-width: 900px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000360}}
 .copy p,
 .copy ul,
 .copy ol {
   margin-bottom: 27.5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000366}}
 .copy p,
 .copy li {
   font-size: 1.125em;
@@ -3753,11 +3771,28 @@ a:hover {
   padding-top: 75px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.container-bg-white {
+  background: white;
+  color: #444444;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000338}}
+.container-bg-white a {
+  color: #fcfcfc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
+.container-bg-white a:hover {
+  color: #fcfcfc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
+.container-bg-white a:active {
+  color: #fcfcfc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .container-bg-gray-light {
   background: #fcfcfc;
   color: #444444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000347}}
 .container-bg-gray-light a {
   color: #fcfcfc;
 }
@@ -3774,7 +3809,7 @@ a:hover {
   background: #666666;
   color: #fcfcfc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000362}}
 .container-bg-gray a {
   color: #fcfcfc;
 }
@@ -3791,7 +3826,7 @@ a:hover {
   background: #262626;
   color: #fcfcfc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000371}}
 .container-bg-gray-dark a {
   color: #fcfcfc;
 }
@@ -3808,14 +3843,14 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 450px;
+  min-height: 350px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .container-bg-austin {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.webp");
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000391}}
 .no-webp .container-bg-austin {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.jpg");
 }
@@ -3824,11 +3859,31 @@ a:hover {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/dallas.v1.webp");
   color: #444444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003100}}
 .no-webp .container-bg-dallas {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/dallas.v1.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003111}}
+.container-cols-2 .col:first-child {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 1.46354em;
+  padding-right: 1.46354em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003115}}
+.container-cols-2 .col:nth-child(2n) {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 1.46354em;
+  padding-right: 1.46354em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003122}}
 .container-cols-3 .col {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3837,6 +3892,14 @@ a:hover {
   float: left;
   padding-left: 1.46354em;
   padding-right: 1.46354em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_container\.scss}line{font-family:\00003127}}
+.container .border-right {
+  border-right: 1px solid white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.container .border-right-orange {
+  border-right-color: #dda14a;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\000034}}
