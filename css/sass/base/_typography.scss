@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	@include child(basic) {
-		font-size: em(20px);
+		font-size: em(22px);
 		letter-spacing: 1px;
 		margin-bottom: $base-line-height / 2;
 	}
@@ -165,7 +165,7 @@ li {
 	.list-basic & {
 		@extend %no-padding;
 
-		margin: 8px 0 0;
+		margin: 12px 0 0;
 
 		&:first-chlid {
 			margin-top: 0;

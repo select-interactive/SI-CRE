@@ -180,49 +180,54 @@
                         
                 imgsLoaded = function() {
 
-                // Loop through each column to find the tallest one
-                window.forEachElement( cols, function( col ) {
-                    var colHeight = $( col ).outerHeight(),
-                        imgHeight;
+                    // Loop through each column to find the tallest one
+                    window.forEachElement( cols, function( col ) {
+                        var colHeight = $( col ).outerHeight(),
+                            imgHeight;
 
-                    if ( col.querySelectorAll( 'img' ) ) {
-                        imgHeight = $( col ).find( 'img' ).first().height();
+                        if ( col.querySelectorAll( 'img' ) ) {
+                            imgHeight = $( col ).find( 'img' ).first().height();
 
-                        if ( imgHeight > colHeight ) {
-                            colHeight = imgHeight + $( col ).css( 'margin-bottom' );
+                            if ( imgHeight > colHeight ) {
+                                colHeight = imgHeight + $( col ).css( 'margin-bottom' );
+                            }
                         }
-                    }
 
-                    if ( colHeight > h ) {
-                        h = colHeight;
-                    }
-                });
+                        if ( colHeight > h ) {
+                            h = colHeight;
+                        }
+                    });
 
-                // Loop through and set the height of each column 
-                // to the height of the tallest column
-                window.forEachElement( cols, function( col ) {
-                    col.style.height = h + 'px';
-                });
-            };
+                    // Loop through and set the height of each column 
+                    // to the height of the tallest column
+                    window.forEachElement( cols, function( col ) {
+                        col.style.height = h + 'px';
+                    });
+                };
 
-            for ( var i = 0; i < imgLen; i++ ) {
-                imgsComplete[i] = false;
-            }
-
-            window.forEachElement( imgs, function( el, i ) {
-                var index = i;
-                        
-                if ( el.complete ) {
-                    imgsComplete[index] = true;
-                    checkComplete();
+            if ( imgLen > 0 ) {
+                for ( var i = 0; i < imgLen; i++ ) {
+                    imgsComplete[i] = false;
                 }
-                else {
-                    el.addEventListener( 'load', function() {
+
+                window.forEachElement( imgs, function( el, i ) {
+                    var index = i;
+                            
+                    if ( el.complete ) {
                         imgsComplete[index] = true;
                         checkComplete();
-                    }, false );
-                }
-            });
+                    }
+                    else {
+                        el.addEventListener( 'load', function() {
+                            imgsComplete[index] = true;
+                            checkComplete();
+                        }, false );
+                    }
+                });
+            }
+            else {
+                imgsLoaded();
+            }
         });
     }
      

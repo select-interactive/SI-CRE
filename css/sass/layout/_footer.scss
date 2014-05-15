@@ -5,6 +5,15 @@
 	color: $si-gray-lighter;
 	font-size: em(15px);
 
+	.col {
+		border-left: 1px solid $si-gray-darker;
+		padding: 10px gutter() * 2;
+
+		&:first-child {
+			border-left: 0;
+		}
+	}
+
 	a {
 		@extend %text-decoration-none;
 
@@ -14,9 +23,12 @@
 		@include transition(all .1s ease);
 
 		&.fa {
-			border-bottom: 0;
+			@extend %text-align-center;
+			border: 1px solid $si-orange;
 			font-size: 1.2em;
 			margin-right: 10px;
+			padding: 8px;
+			width: 35px;
 			@include link-colors($si-orange, darken($si-orange, 8%), darken($si-orange, 8%));
 		}
 	}

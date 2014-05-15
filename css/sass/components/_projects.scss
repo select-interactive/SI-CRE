@@ -63,7 +63,7 @@
 	}
 
 	@include child(name) {
-		@extend .av-black;
+		@extend .av-medium;
 		
 		color: $si-gray-darkest;
 		font-size: em(18px);

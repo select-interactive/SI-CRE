@@ -69,16 +69,17 @@ button,
 	// Button Types
 	// ------------
 	&.btn-action {
-		background: $white;
-		border-color: $si-orange;
+		background: transparent;
+		border: 1px solid $si-orange !important;
+		color: $si-orange !important;
 		font-size: em(40px);
 		line-height: 1;
 		padding: 15px 35px;
 		
-		@include link-colors($si-orange, $white, $si-orange);
-
+		
 		&:hover {
-			background: $si-orange;
+			background: $si-orange !important;
+			color: $white !important;
 		}
 	}
 

@@ -72,14 +72,14 @@
                             <i class="fa fa-pencil-square-o fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Design</h3>
                         </div>
-                        <p>A good design is critical to successfully communicate the essential information of your asset. Select Interactive can create a custom design based upon an extensive evaluation of your unique needs. We can work with your marketing team to present a high quality, professional representation of your overall marketing plan for th web.</p>
+                        <p>A good design is critical to successfully communicate the essential information of your asset. Select Interactive can create a custom design based upon an extensive evaluation of your unique needs. We can work with your marketing team to present a high quality, professional representation of your overall marketing plan for the web.</p>
                     </div>
                     <div class="col">
                         <div class="text-center">
                             <i class="fa fa-code fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Engineering</h3>
                         </div>
-                        <p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community.</p>
+                        <p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community. We know how to implement the most creative designs, without sacrificing performance.</p>
                     </div>
                 </div>
             </div>
@@ -140,13 +140,13 @@
             </div>
         </div>
         <footer id="footer-main" class="container-full-width container-vert-padding container-bg-gray-dark container-cols-3">
-            <div class="container-1000">
-                <div class="col">
-                    <h4 class="heading heading-basic color-si-orange">Connect</h4>
+            <div class="container eq-height">
+                <div class="col eq-height-item">
+                    <h4 class="heading heading-basic color-si-orange">Connect.</h4>
                     <ul class="list-basic">
                         <li>T. <a href="tel:817.210.4303">817.210.4303</a></li>
                         <li><a href="mailto:contact@select-interactive.com">contact@select-interactive.com</a></li>
-                        <li>3343 Locke Ave.<br />Suite 107<br />Fort Worth, TX 76107</li>
+                        <li>3343 Locke Ave. Suite 107<br />Fort Worth, TX 76107</li>
                         <li>
                             <a href="https://twitter.com/" class="fa fa-twitter"></a>
                             <a href="https://www.facebook.com/SelectInteractive" class="fa fa-facebook-square"></a>
@@ -155,8 +155,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h4 class="heading heading-basic color-si-orange">Something About Nav Here</h4>
+                <div class="col eq-height-item">
+                    <h4 class="heading heading-basic color-si-orange">Learn More.</h4>
                     <ul class="list-basic list-arrows">
                         <li><a href="/">Components</a></li>
                         <li><a href="/">Our Work</a></li>
@@ -164,8 +164,10 @@
                         <li><a href="/">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <p>&copy; <%= Year(Now)%> Select Interactive, LLC. All rights reserved.</p><p>Founded by <a href="mailto:jeremy@select-interactive.com">Jeremy Burton</a> and <a href="mailto:danh@select-interactive.com">Dan Harris</a>.</p>
+                <div class="col eq-height-item">
+                    <h4 class="heading heading-basic color-si-orange">Striving to Build a Better Web.</h4>
+                    <p>Founded by <a href="mailto:jeremy@select-interactive.com">Jeremy Burton</a> and <a href="mailto:danh@select-interactive.com">Dan Harris</a>.</p>
+                    <p>&copy; <%= Year(Now)%> Select Interactive, LLC. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -13,8 +13,8 @@ ul.list-basic, ol.list-basic, #nav-main ul {
 .av-medium,
 .heading-primary,
 .heading-secondary,
-.av-black,
-.project-name {
+.project-name,
+.av-black {
   font-weight: normal;
 }
 
@@ -30,7 +30,7 @@ ul.list-basic, ol.list-basic, #nav-main ul {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-placeholders-1\.1\.1\/stylesheets\/compass-placeholders\/typography\/_base\.scss}line{font-family:\0000331}}
-.text-center, .project {
+.text-center, #footer-main a.fa, .project {
   text-align: center;
 }
 
@@ -3257,12 +3257,12 @@ img {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000366}}
-.av-medium, .heading-primary, .heading-secondary {
+.av-medium, .heading-primary, .heading-secondary, .project-name {
   font-family: 'Avenir-Medium';
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000369}}
-.av-black, .project-name {
+.av-black {
   font-family: 'Avenir-Black';
 }
 
@@ -3334,7 +3334,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .heading-basic {
-  font-size: 1.25em;
+  font-size: 1.375em;
   letter-spacing: 1px;
   margin-bottom: 11px;
 }
@@ -3368,7 +3368,7 @@ li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\00003165}}
 .list-basic li {
-  margin: 8px 0 0;
+  margin: 12px 0 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\00003170}}
 .list-basic li:first-chlid {
@@ -3924,6 +3924,15 @@ a:hover {
   font-size: 0.9375em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\000038}}
+#footer-main .col {
+  border-left: 1px solid #666666;
+  padding: 10px 2.92708em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\0000312}}
+#footer-main .col:first-child {
+  border-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\0000317}}
 #footer-main a {
   border-bottom: 1px dotted #d8d8d9;
   color: #d8d8d9;
@@ -3940,11 +3949,13 @@ a:hover {
 #footer-main a:active {
   color: #fcfcfc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\0000325}}
 #footer-main a.fa {
-  border-bottom: 0;
+  border: 1px solid #dda14a;
   font-size: 1.2em;
   margin-right: 10px;
+  padding: 8px;
+  width: 35px;
   color: #dda14a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
@@ -4001,29 +4012,20 @@ button:disabled,
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000371}}
 button.btn-action,
 .btn.btn-action {
-  background: white;
-  border-color: #dda14a;
+  background: transparent;
+  border: 1px solid #dda14a !important;
+  color: #dda14a !important;
   font-size: 2.5em;
   line-height: 1;
   padding: 15px 35px;
-  color: #dda14a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
-button.btn-action:hover,
-.btn.btn-action:hover {
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
-button.btn-action:active,
-.btn.btn-action:active {
-  color: #dda14a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000380}}
 button.btn-action:hover,
 .btn.btn-action:hover {
-  background: #dda14a;
+  background: #dda14a !important;
+  color: white !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000392}}
 button.btn-xl, button.btn-large,
 .btn.btn-xl,
 .btn.btn-large {
@@ -4032,32 +4034,32 @@ button.btn-xl, button.btn-large,
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000399}}
 button.btn-xl,
 .btn.btn-xl {
   font-size: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003104}}
 button.btn-large,
 .btn.btn-large {
   font-size: 18px;
   padding: 9px 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003110}}
 button.btn-small,
 .btn.btn-small {
   font-size: 14px;
   line-height: 20px;
   padding: 5px 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003117}}
 button.btn-mini,
 .btn.btn-mini {
   font-size: 14px;
   line-height: 18px;
   padding: 2px 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003129}}
 button.btn-green,
 .btn.btn-green {
   background: #46a546;
@@ -4083,7 +4085,7 @@ button.btn-green:disabled,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003134}}
 button.btn-red,
 .btn.btn-red {
   background: #9d261d;
@@ -4109,7 +4111,7 @@ button.btn-red:disabled,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003139}}
 button.btn-yellow,
 .btn.btn-yellow {
   background: #ffc40d;
@@ -4135,7 +4137,7 @@ button.btn-yellow:disabled,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003144}}
 button.btn-orange,
 .btn.btn-orange {
   background: #f89406;
@@ -4161,7 +4163,7 @@ button.btn-orange:disabled,
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\00003149}}
 button.btn-blue,
 .btn.btn-blue {
   background: #049cdb;

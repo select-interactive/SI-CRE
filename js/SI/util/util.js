@@ -65,7 +65,7 @@
                 DIR_NEXT = 2,
                 index = 0,
                 len = 0,
-                transDelay = 4000,
+                transDelay = 6000,
                 transTime = 500,
                 transTimeout = null,
                 isRotating = false;
