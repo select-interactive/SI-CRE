@@ -44,14 +44,14 @@
                     </div>
                     <div class="slide slide-right">
                         <div class="copy copy-narrow text-center">
-                            <h2 class="heading heading-primary">Effectively communicate your message</h2>
-                            <h3 class="heading heading-subtitle">Your site needs to be up-to-date and designed for ease-of-access from any device and location. Select Interactive specializes in developing custom content management systems (CMS) to allow you to easily update your site&rsquo;s content and data.</h3>
+                            <h2 class="heading heading-primary">Effectively communicate your message.</h2>
+                            <h3 class="heading heading-subtitle">Your site needs to kept be up-to-date and designed for ease-of-access from any device and location. Select Interactive specializes in developing custom content management systems (CMS) giving you the ability easily update your site&rsquo;s content and data from anywhere.</h3>
                         </div>
                     </div>
                     <div class="slide slide-right">
                         <div class="copy copy-narrow text-center">
-                            <h2 class="heading heading-primary">Reach your potential viewer</h2>
-                            <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience. Your site should be developed with search engine &ldquo;Best Practices&rdquo; from day one. Your site should also be 100% accessible on any device, from phone to PC. Your site should be implemented with a responsive web design strategy and progressive enhancements for a multi-device world.</h3>
+                            <h2 class="heading heading-primary">Reach your potential viewers.</h2>
+                            <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience via Google, Bing, and Yahoo. Websites should be developed with search engine &ldquo;Best Practices&rdquo; from day one to ensure successful visibilty in search results. Your site should also be easily accessible on any device, from phone to PC. It should be implemented with a responsive web design strategy to support a multi-device world.</h3>
                         </div>
                     </div>
                     <a href="#" id="slide-btn-prev" class="slides-arrows slides-arrows-prev"></a>
