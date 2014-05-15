@@ -6,7 +6,7 @@
 // ----------------------
 // Dimensions + Grid Vars
 // ----------------------
-$max-width:			1000;
+$max-width:			1300;
 $max-width-px:		$max-width + 0px;
 $base-font-size:	16px;
 $base-line-height:	22px;
@@ -23,9 +23,10 @@ $column-width:	(($max-width - (($total-columns - 1) * $base-font-size)) / ($tota
 // -------------------
 // Typography Settings
 // -------------------
-$font-primary: sans-serif;
-$font-secondary: serif;
-$font-bold: '';
+$font-primary: 'Avenir-35', sans-serif;
+$font-secondary: 'Telegrafico', serif;
+$font-bold: 'Avenir-Medium', sans-serif;
+$font-bolder: 'Avenir-Black', sans-serif;
 
 
 // ------
@@ -51,14 +52,22 @@ $orange:		#f89406;
 $pink:			#c3325f;
 $purple:		#7a43b6;
 
+
 // Project Specific Colors
+$si-gray-darkest:  #444;
+$si-gray-darker:   #666;
+$si-gray-dark:     #8e8d8e;
+$si-gray-light:    #b8b8b9;
+$si-gray-lighter:  #d8d8d9;
+$si-gray-lightest: #fcfcfc;
+$si-orange:		   #dda14a;
 
 
 // -----------
 // Body Styles
 // -----------
 $body-background:	$white;
-$body-color:		$darker-gray;
+$body-color:		$si-gray-darkest;
 
 
 // -----

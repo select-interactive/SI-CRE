@@ -7,6 +7,68 @@
 // ------------------------------
 // Embedded Fonts with @font-face
 // ------------------------------
+/** Fonts
+ -----------------------------*/
+@font-face {
+	font-family: 'Telegrafico';
+	src: url('/font/telegrafico.eot');
+	src: url('/font/telegrafico.eot?#iefix') format('embedded-opentype'),
+		 url('/font/telegrafico.woff') format('woff'),
+		 url('/font/telegrafico.ttf') format('truetype'),
+		 url('/font/telegrafico.svg#TelegraficoRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-35';
+	src: url('/font/avenir-35-webfont.eot');
+	src: url('/font/avenir-35-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/font/avenir-35-webfont.woff') format('woff'),
+		 url('/font/avenir-35-webfont.ttf') format('truetype'),
+		 url('/font/avenir-35-webfont.svg#avenir35') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Medium';
+	src: url('/font/avenir-Medium-webfont.eot');
+	src: url('/font/avenir-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/font/avenir-Medium-webfont.woff') format('woff'),
+		 url('/font/avenir-Medium-webfont.ttf') format('truetype'),
+		 url('/font/avenir-Medium-webfont.svg#avenirMedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Black';
+	src: url('/font/avenir-black-webfont.eot');
+	src: url('/font/avenir-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/font/avenir-black-webfont.woff') format('woff'),
+		 url('/font/avenir-black-webfont.ttf') format('truetype'),
+		 url('/font/avenir-black-webfont.svg#avenirblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.telegrafico,
+.av-35,
+.av-medium,
+.av-black {
+	@extend %font-weight-normal;
+}
+
+.telegrafico {
+	font-family: 'Telegrafico';
+}
+.av-35{
+	font-family: 'Avenir-35';
+}
+.av-medium {
+	font-family: 'Avenir-Medium';
+}
+.av-black {
+	font-family: 'Avenir-Black';
+}
 
 
 // -------
@@ -23,14 +85,50 @@
 .text-smaller { font-size: .75em; }
 .text-xsmall { font-size: .6em; }
 .text-uppercase { @extend %text-transform-uppercase }
+.color-si-orange { color: $si-orange; }
 
 
 // -------
 // Headers
 // -------
 h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
 	margin: 0;
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
+}
+
+.heading {
+	line-height: 1.1;
+
+	@include child(primary) {
+		@extend .av-medium;
+		font-size: em(44px);
+		margin-bottom: $base-line-height;
+	}
+
+	@include child(subtitle) {
+		font-size: em(22px);
+		line-height: 1.4;
+	}
+
+	@include child(secondary) {
+		@extend .av-medium;
+		@extend %display-inline-block;
+
+		border: 1px solid $si-gray-lighter;
+		border-radius: 3px;
+		font-size: em(24px);
+		letter-spacing: 1px;
+		line-height: 1.2;
+		margin: 0 auto $base-line-height;
+		padding: 7px 25px 5px;
+	}
+
+	@include child(basic) {
+		font-size: em(20px);
+		letter-spacing: 1px;
+		margin-bottom: $base-line-height / 2;
+	}
 }
 
 
@@ -48,6 +146,12 @@ p {
 ul, ol {
 	padding: 0;
 	margin: 0 0 ($base-line-height / 2) 25px;
+
+	&.list-basic {
+		@extend %list-style-none;
+		@extend %no-padding;
+		margin-left: 0;
+	}
 }
 ul ul,
 ul ol,
@@ -57,6 +161,21 @@ ol ul {
 }
 li {
 	line-height: $base-line-height;
+
+	.list-basic & {
+		@extend %no-padding;
+
+		margin: 8px 0 0;
+
+		&:first-chlid {
+			margin-top: 0;
+		}
+	}
+
+	.list-arrows & {
+		background: url('//static.select-interactive.com/img/list-style.v1.png') no-repeat 0 6px;
+		padding-left: 15px;
+	}
 }
 
 

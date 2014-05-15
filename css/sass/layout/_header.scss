@@ -1,10 +1,81 @@
 ﻿// ------
 // Header
 // ------
-header { }
+#hdr-main {
+	@extend %position-fixed;
 
+	background: #fcfcfc;
+	border-bottom: #ececec;
+	box-shadow: 0 1px 4px #d2d2d2;
+	padding: 10px 0;
+	width: 100%;
+
+	@include bg-img(#fcfcfc, #f4f4f4);
+}
+
+#masthead {
+	float: left;
+}
 
 // ---
 // Nav
 // ---
-nav { }
+#nav-main {
+	float: right;
+	margin: 20px 0 0 30px;
+
+	ul {
+		@extend %list-style-none;
+		@extend %no-margin;
+		@extend %no-padding;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 0 0 10px;
+
+		&:before {
+			content: "//";
+			margin-right: 10px;
+		}
+
+		&:first-child,
+		&.no-bars {
+			margin-left: 0;
+
+			&:before {
+				content: "";
+				margin-right: 0;
+			}
+		}
+
+		&.break {
+			margin-left: 30px;
+
+			&:before {
+				color: $si-gray-darkest;
+				content: "|";
+				font-size: 2.5em;
+				margin: 0 30px 0 0;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	a {
+		@extend %display-inline-block;
+		@extend %text-decoration-none;
+
+		border-bottom: 2px solid transparent;
+		font-size: em(19px);
+		padding: 0 2px 6px;
+
+		@include link-colors($si-gray-darker, $si-gray-darkest, $si-gray-darkest);
+		@include transition(all .3s ease);
+
+		&:hover {
+			border-bottom-color: $si-gray-darker;
+			padding-bottom: 0;
+		}
+	}
+}

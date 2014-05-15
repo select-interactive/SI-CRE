@@ -1,6 +1,6 @@
 ﻿/*!
- * CSS for website
- * @author: [name] [(email/web site)]
+ * CSS for cre.selec-interactive.com
+ * @author: Jeremy Burton (jeremy@select-interactive.com/www.select-interactive.com)
  */
 
 // --------------------
@@ -22,14 +22,17 @@
 @import "base/typography";
 
 // Layout
-@import "layout/susy";
 @import "layout/grid";
+@import "layout/susy";
+@import "layout/layout-helpers";
+@import "layout/container";
 @import "layout/header";
 @import "layout/footer";
 
 // Components
 @import "components/buttons";
 @import "components/forms";
+@import "components/projects";
 
 // Page Specific Styles
 // @import "pages/...";
@@ -75,8 +78,8 @@ body {
 // ---------
 // Selection
 // ---------
-::-moz-selection{ background: #b3d4fc; color: #fff; }
-::selection{ background: #b3d4fc; color: #fff; }
+::-moz-selection{ background: $si-orange; color: #fff; }
+::selection{ background: $si-orange; color: #fff; }
 
 
 // -------------------

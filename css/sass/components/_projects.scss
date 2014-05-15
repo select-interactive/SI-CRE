@@ -1,0 +1,81 @@
+﻿.projects {
+	@include layout(12 1/4 split);
+	@extend %clearfix;
+}
+
+.project {
+	@extend %position-relative;
+	@extend %text-align-center;
+	@include span(3);
+
+	background: $white;
+	border: 1px solid $si-gray-lighter;
+	box-shadow: 0 0 1px lighten($si-gray-light, 10%);
+	margin-bottom: gutter() * 4;
+	overflow: hidden;
+	padding: 0;
+
+	&:hover {
+		.project-overlay {
+			@include opacity(1);
+		}
+	}
+
+	a {
+		@extend %text-decoration-none;
+	}
+
+	@include child(img) {
+		@extend %position-relative;
+	}
+
+	@include child(overlay) {
+		@extend %position-absolute;
+
+		background: rgba($si-orange, .8);
+		cursor: pointer;
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 100%;
+		
+		@include opacity(0);
+		@include transition(all .25s ease);
+
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		@include child(msg) {
+			@extend %display-inline-block;
+
+			border: 1px solid $white;
+			border-radius: 4px;
+			color: $white;
+			font-size: em(20px);
+			letter-spacing: 1px;
+			padding: 5px 15px;
+			vertical-align: middle;
+		}
+	}
+
+	@include child(name) {
+		@extend .av-black;
+		
+		color: $si-gray-darkest;
+		font-size: em(18px);
+		line-height: 1;
+		margin-bottom: 5px;
+		padding: 10px 10px 0;
+	}
+
+	@include child(location) {
+		color: $si-gray-dark;
+		font-size: em(15px);
+		line-height: 1;
+		padding: 0 0 10px;
+	}
+}

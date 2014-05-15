@@ -1,4 +1,23 @@
 ﻿// ------
 // Footer
 // ------
-footer { }
+#footer-main {
+	color: $si-gray-lighter;
+	font-size: em(15px);
+
+	a {
+		@extend %text-decoration-none;
+
+		border-bottom: 1px dotted $si-gray-lighter;
+
+		@include link-colors($si-gray-lighter, $si-gray-lightest, $si-gray-lightest);
+		@include transition(all .1s ease);
+
+		&.fa {
+			border-bottom: 0;
+			font-size: 1.2em;
+			margin-right: 10px;
+			@include link-colors($si-orange, $si-orange, $si-orange);
+		}
+	}
+}

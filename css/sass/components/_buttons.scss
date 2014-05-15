@@ -48,7 +48,7 @@
 // ---------------
 button,
 .btn {
-	@include border-radius($btn-border-radius);	
+	@extend %text-decoration-none;
 	
 	border: 1px solid $btn-border;
 	color: $white;
@@ -59,9 +59,28 @@ button,
 	padding: 4px 10px 4px;
 	text-align: center;
 	vertical-align: middle;
-	
+
+	@include border-radius($btn-border-radius);	
 	@include btn-color($btn-bg);
 	@include transition(all .2s linear);
+
+
+	// ------------
+	// Button Types
+	// ------------
+	&.btn-action {
+		background: $white;
+		border-color: $si-orange;
+		font-size: em(40px);
+		line-height: 1;
+		padding: 15px 35px;
+		
+		@include link-colors($si-orange, $white, $si-orange);
+
+		&:hover {
+			background: $si-orange;
+		}
+	}
 
 
 	// ------------

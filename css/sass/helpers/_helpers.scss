@@ -3,6 +3,23 @@
  */
 
 
+ /*
+  * Vertical align
+  */
+.vert-container {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+.vert-container-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
 /*
  * Margin and padding helpers
  */

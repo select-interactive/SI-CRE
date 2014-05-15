@@ -1,0 +1,99 @@
+﻿// ----------
+// Containers
+// ----------
+.container {
+	$container-vert-padding: 75px;
+
+	// ---------------
+	// Container Sizes
+	// ---------------
+	@include container($max-width-px);
+
+	@include child(full-width) {
+		@extend %clearfix;
+		width: 100%;
+	}
+
+	@include child(1000) {
+		@include container(1000px);
+	}
+
+
+	// -----------------
+	// Container Padding
+	// -----------------
+	@include child(vert-padding) {
+		padding-bottom: $container-vert-padding;
+		padding-top: $container-vert-padding;
+	}
+
+
+	// ----------------
+	// Container Colors
+	// ----------------
+	@include child(bg-gray-light) {
+		background: $si-gray-lightest;
+		color: $si-gray-darkest;
+
+		a {
+			@include link-colors($si-gray-lightest, $si-gray-lightest, $si-gray-lightest);
+		}
+	}
+
+	@include child(bg-gray) {
+		background: $si-gray-darker;
+		color: $si-gray-lightest;
+
+		a {
+			@include link-colors($si-gray-lightest, $si-gray-lightest, $si-gray-lightest);
+		}
+	}
+
+	@include child(bg-gray-dark) {
+		background: #262626;
+		color: $si-gray-lightest;
+
+		a {
+			@include link-colors($si-gray-lightest, $si-gray-lightest, $si-gray-lightest);
+		}
+	}
+
+
+	// -------------------------
+	// Containers with bg images
+	// -------------------------
+	@include child(bg-city) {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 450px;
+	}
+
+	@include child(bg-austin) {
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.webp');
+		color: $white;
+
+		.no-webp & {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.jpg');
+		}
+	}
+
+	@include child(bg-dallas) {
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/dallas.v1.webp');
+		color: $si-gray-darkest;
+
+		.no-webp & {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/dallas.v1.jpg');
+		}
+	}
+
+
+	// ----------------
+	// Container Layout
+	// ----------------
+	@include child(cols-3) {
+		.col {
+			@include span(4);
+		}
+	}
+}
