@@ -46,19 +46,7 @@
      * ------------------------------------------------------------------
      */
     if ( ! ( 'classList' in div ) ) {
-        Element.prototype.classList = {};;
-
-        Element.prototype.classList.add = function( className ) {
-            this.className += ' ' + className;
-        };
-
-        Element.prototype.classList.remove = function( className ) {
-            this.className = this.className.replace( new RegExp('(^| )' + className.split( ' ' ).join( '|' ) + '( |$)', 'gi'), ' ' );
-        };
-
-        Element.prototype.classList.contains = function( className ) {
-            return new RegExp('(^| )' + className + '( |$)', 'gi').test( this.className );
-        };
+        var prototype=Array.prototype,push=prototype.push,splice=prototype.splice,join=prototype.join;function DOMTokenList(a){this.el=a;a=a.className.replace(/^\s+|\s+$/g,"").split(/\s+/);for(var b=0;b<a.length;b++)push.call(this,a[b])} DOMTokenList.prototype={add:function(a){this.contains(a)||(push.call(this,a),this.el.className=this.toString())},contains:function(a){return-1!=this.el.className.indexOf(a)},item:function(a){return this[a]||null},remove:function(a){if(this.contains(a)){for(var b=0;b<this.length&&this[b]!=a;b++);splice.call(this,b,1);this.el.className=this.toString()}},toString:function(){return join.call(this," ")},toggle:function(a){this.contains(a)?this.remove(a):this.add(a);return this.contains(a)}}; window.DOMTokenList=DOMTokenList;function defineElementGetter(a,b,c){Object.defineProperty?Object.defineProperty(a,b,{get:c}):a.__defineGetter__(b,c)}defineElementGetter(Element.prototype,"classList",function(){return new DOMTokenList(this)});
     }
 
 
