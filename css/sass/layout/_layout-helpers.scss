@@ -10,14 +10,14 @@
 		background-position: center 80px;
 		background-repeat: no-repeat;
 
-		&.no-webp {
+		.no-webp & {
 			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg');
 		}
 
 		@include mediaquery(massive) {
 			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp');
 
-			&.no-webp {
+			.no-webp & {
 				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg');
 			}
 		}
@@ -33,7 +33,7 @@
 	margin-right: auto;
 
 	@include child(narrow) {
-		max-width: 650px;
+		max-width: 700px;
 	}
 
 	@include child(med) {
@@ -41,8 +41,14 @@
 	}
 
 	p,
+	ul,
+	ol {
+		margin-bottom: $base-line-height * 1.25;
+	}
+
+	p,
 	li {
-		font-size: em(20px);
+		font-size: em(18px);
 		line-height: 1.35;
 	}
 }

@@ -35,9 +35,27 @@
         </header>
         <div id="content-wrapper" class="home" role="main">
             <div class="container-full-width container-vert-padding container-bg-city">
-                <div class="copy copy-narrow text-center">
-                    <h2 class="heading heading-primary">Why does your property<br />need a website?</h2>
-                    <h3 class="heading heading-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tempus ante. Morbi gravida mollis posuere. Vivamus eu lacus hendrerit, aliquam neque et, pulvinar justo. Praesent vitae bibendum metus.</h3>
+                <div class="slides">
+                    <div class="slide slide-center">
+                        <div class="copy copy-narrow text-center">
+                            <h2 class="heading heading-primary">Why does your building<br />need a website?</h2>
+                            <h3 class="heading heading-subtitle">It&rsquo;s the first impression potential tenants or buyers have of the property before they set foot on it. As an owner or marketing representative of a commercial real estate property, what does your website communicate about your asset? Are you trying to attract new tenants? Provide a portal to service your existing tenants? Are you looking to present your property to prospective buyers?</h3>
+                        </div>
+                    </div>
+                    <div class="slide slide-right">
+                        <div class="copy copy-narrow text-center">
+                            <h2 class="heading heading-primary">Effectively communicate your message</h2>
+                            <h3 class="heading heading-subtitle">Your site needs to be up-to-date and designed for ease-of-access from any device and location. Select Interactive specializes in developing custom content management systems (CMS) to allow you to easily update your site&rsquo;s content and data.</h3>
+                        </div>
+                    </div>
+                    <div class="slide slide-right">
+                        <div class="copy copy-narrow text-center">
+                            <h2 class="heading heading-primary">Reach your potential viewer</h2>
+                            <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience. Your site should be developed with search engine &ldquo;Best Practices&rdquo; from day one. Your site should also be 100% accessible on any device, from phone to PC. Your site should be implemented with a responsive web design strategy and progressive enhancements for a multi-device world.</h3>
+                        </div>
+                    </div>
+                    <a href="#" id="slide-btn-prev" class="slides-arrows slides-arrows-prev"></a>
+                    <a href="#" id="slide-btn-next" class="slides-arrows slides-arrows-next"></a>
                 </div>
             </div>
             <div class="container-full-width container-vert-padding container-bg-gray container-cols-3">
@@ -47,22 +65,28 @@
                             <i class="fa fa-refresh fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Experience</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.</p>
+                        <p>When selecting a web development firm, it&rsquo;s imperative for you to work with a company that understands your business. Select Interactive developers have been involved in both commercial and residential real estate projects dating back to the 1990&rsquo;s. We have the experience in and knowledge of the industry that allows us to work seamlessly with building owners, leasing teams, and marketing teams.</p>
                     </div>
                     <div class="col">
                         <div class="text-center">
                             <i class="fa fa-pencil-square-o fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Design</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.</p>
+                        <p>A good design is critical to successfully communicate the essential information of your asset. Select Interactive can create a custom design based upon an extensive evaluation of your unique needs. We can work with your marketing team to present a high quality, professional representation of your overall marketing plan for th web.</p>
                     </div>
                     <div class="col">
                         <div class="text-center">
                             <i class="fa fa-code fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Engineering</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.</p>
+                        <p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community.</p>
                     </div>
+                </div>
+            </div>
+            <div class="container-full-width container-vert-padding container-bg-city container-bg-austin">
+                <div class="copy copy-med text-center text-larger">
+                    <h3 class="heading heading-secondary">A Website Development Firm<br />That Knows Commercial Real Estate</h3>
+                    <p >Select Interactive specializes in the design and development of commercial real estate projects. Our team specializes in designs that clearly communicate your message to your target audience. Our engineers understand how viewers interact with the information on your site, and excel at implementing the best user experience possible.</p>
                 </div>
             </div>
             <div class="container-full-width container-vert-padding container-bg-gray-light">
@@ -109,15 +133,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="copy text-center">
+<%--                    <div class="copy text-center">
                         <a href="#" class="btn btn-action">See Our Work</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-full-width container-vert-padding container-bg-city container-bg-austin">
-                <div class="copy copy-med text-center">
-                    <h3 class="heading heading-secondary">A Website Development Firm<br />That Knows Commercial Real Estate</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tempus ante. Morbi gravida mollis posuere. Vivamus eu lacus hendrerit, aliquam neque et, pulvinar justo. Praesent vitae bibendum metus. Ut gravida sapien sapien, quis feugiat erat tincidunt et. Morbi quis tincidunt justo. Suspendisse quis scelerisque mi, eget ultrices enim. Vestibulum eget nisi facilisis, accumsan dui ac, aliquam leo.</p>
+                    </div>--%>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@
 	box-shadow: 0 1px 4px #d2d2d2;
 	padding: 10px 0;
 	width: 100%;
+	z-index: 1000;
 
 	@include bg-img(#fcfcfc, #f4f4f4);
 }
@@ -68,14 +69,14 @@
 
 		border-bottom: 2px solid transparent;
 		font-size: em(19px);
-		padding: 0 2px 6px;
+		padding: 0 2px 8px;
 
 		@include link-colors($si-gray-darker, $si-gray-darkest, $si-gray-darkest);
 		@include transition(all .3s ease);
 
 		&:hover {
 			border-bottom-color: $si-gray-darker;
-			padding-bottom: 0;
+			padding-bottom: 2px;
 		}
 	}
 }

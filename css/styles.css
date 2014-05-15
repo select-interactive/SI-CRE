@@ -3198,12 +3198,12 @@ img {
  * Project SASS Mixins
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000333}}
-.project-overlay {
+.slides-arrows, .slide, .project-overlay {
   position: absolute;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000333}}
-.project, .project-img {
+.slides, .project, .project-img {
   position: relative;
 }
 
@@ -3268,32 +3268,32 @@ img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000381}}
 .text-xlarge {
-  font-size: 1.4em;
+  font-size: 1.4em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000382}}
 .text-larger {
-  font-size: 1.25em;
+  font-size: 1.25em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000383}}
 .text-large {
-  font-size: 1.1em;
+  font-size: 1.1em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000384}}
 .text-small {
-  font-size: .9em;
+  font-size: .9em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000385}}
 .text-smaller {
-  font-size: .75em;
+  font-size: .75em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000386}}
 .text-xsmall {
-  font-size: .6em;
+  font-size: .6em !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\0000388}}
@@ -3679,7 +3679,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000313}}
-#content-wrapper.home.no-webp {
+.no-webp #content-wrapper.home {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg");
 }
 @media (min-width: 125em) {
@@ -3688,7 +3688,7 @@ a:hover {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp");
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000320}}
-  #content-wrapper.home.no-webp {
+  .no-webp #content-wrapper.home {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg");
   }
 }
@@ -3700,7 +3700,7 @@ a:hover {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .copy-narrow {
-  max-width: 650px;
+  max-width: 700px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .copy-med {
@@ -3708,8 +3708,14 @@ a:hover {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000343}}
 .copy p,
+.copy ul,
+.copy ol {
+  margin-bottom: 27.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000349}}
+.copy p,
 .copy li {
-  font-size: 1.25em;
+  font-size: 1.125em;
   line-height: 1.35;
 }
 
@@ -3840,45 +3846,46 @@ a:hover {
   box-shadow: 0 1px 4px #d2d2d2;
   padding: 10px 0;
   width: 100%;
+  z-index: 1000;
   background-image: -moz-linear-gradient(#fcfcfc, #f4f4f4);
   background-image: -webkit-linear-gradient(#fcfcfc, #f4f4f4);
   background-image: linear-gradient(#fcfcfc, #f4f4f4);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000317}}
 #masthead {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000324}}
 #nav-main {
   float: right;
   margin: 20px 0 0 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000334}}
 #nav-main li {
   display: inline-block;
   margin: 0 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000338}}
 #nav-main li:before {
   content: "//";
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000343}}
 #nav-main li:first-child, #nav-main li.no-bars {
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000347}}
 #nav-main li:first-child:before, #nav-main li.no-bars:before {
   content: "";
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000353}}
 #nav-main li.break {
   margin-left: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000356}}
 #nav-main li.break:before {
   color: #444444;
   content: "|";
@@ -3886,11 +3893,11 @@ a:hover {
   margin: 0 30px 0 0;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000366}}
 #nav-main a {
   border-bottom: 2px solid transparent;
   font-size: 1.1875em;
-  padding: 0 2px 6px;
+  padding: 0 2px 8px;
   color: #666666;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -3905,10 +3912,10 @@ a:hover {
 #nav-main a:active {
   color: #444444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_header\.scss}line{font-family:\0000377}}
 #nav-main a:hover {
   border-bottom-color: #666666;
-  padding-bottom: 0;
+  padding-bottom: 2px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_footer\.scss}line{font-family:\000034}}
@@ -3942,11 +3949,11 @@ a:hover {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
 #footer-main a.fa:hover {
-  color: #dda14a;
+  color: #d68f28;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
 #footer-main a.fa:active {
-  color: #dda14a;
+  color: #d68f28;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000349}}
@@ -4433,6 +4440,76 @@ button.btn-blue:disabled,
   color: #c09853;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_slides\.scss}line{font-family:\000031}}
+.slides {
+  min-height: 350px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slides-arrows {
+  background: url("//static.select-interactive.com/CRE/img/arrows.v1.png") no-repeat 0 0;
+  height: 160px;
+  margin-top: -80px;
+  top: 50%;
+  width: 100px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_slides\.scss}line{font-family:\0000318}}
+.slides-arrows:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slides-arrows-prev {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slides-arrows-next {
+  background-position: -100px 0;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_slides\.scss}line{font-family:\0000333}}
+.slide {
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -o-transition: -o-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slide-center {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slide-left {
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slide-right {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.slide-no-trans {
+  -moz-transition: -moz-transform 0s ease;
+  -o-transition: -o-transform 0s ease;
+  -webkit-transition: -webkit-transform 0s ease;
+  transition: transform 0s ease;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_projects\.scss}line{font-family:\000036}}
 .project {
   width: 23.33333%;
@@ -4499,7 +4576,7 @@ button.btn-blue:disabled,
   padding: 0 0 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000352}}
 html {
   overflow-y: scroll;
   font-size: 16px;
@@ -4508,7 +4585,7 @@ html {
   -ms-text-size-adjust: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000368}}
 body {
   background: white;
   color: #444444;
@@ -4516,19 +4593,19 @@ body {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000382}}
 ::-moz-selection {
   background: #dda14a;
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000383}}
 ::selection {
   background: #dda14a;
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/styles\.scss}line{font-family:\0000389}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
