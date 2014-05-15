@@ -33,6 +33,7 @@
 .slide {
 	@extend %position-absolute;
 
+	@include transform(translateX(100%));
 	@include transition(transform .5s ease-in-out);
 
 	@include child(center) {
