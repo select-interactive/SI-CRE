@@ -133,9 +133,6 @@
                             </a>
                         </div>
                     </div>
-<%--                    <div class="copy text-center">
-                        <a href="#" class="btn btn-action">See Our Work</a>
-                    </div>--%>
                 </div>
             </div>
         </div>
