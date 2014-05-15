@@ -44,6 +44,12 @@
 		background: $si-gray-darker;
 		color: $si-gray-lightest;
 
+		// Clip-path support isn't good enough
+		//   especially with animations/transitions of other elements
+		//-webkit-clip-path: polygon(0 100%, 0 0, 48% 0, 50% 7%, 52% 0, 100% 0, 100% 100%);
+		//-moz-clip-path: polygon(0 100%, 0 0, 48% 0, 50% 7%, 52% 0, 100% 0, 100% 100%);
+		//clip-path: polygon(0 100%, 0 0, 48% 0, 50% 7%, 52% 0, 100% 0, 100% 100%);
+
 		a {
 			@include link-colors($si-gray-lightest, $si-gray-lightest, $si-gray-lightest);
 		}

@@ -79,7 +79,7 @@
                             <i class="fa fa-code fa-3x fa-alone"></i>
                             <h3 class="heading heading-secondary">Engineering</h3>
                         </div>
-                        <p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community. We know how to implement the most creative designs, without sacrificing performance.</p>
+                        <p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community. We know how to implement the most creative designs, without sacrificing performance or usability.</p>
                     </div>
                 </div>
             </div>
