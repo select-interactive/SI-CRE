@@ -218,6 +218,39 @@
             }
         });
     }
+
+     /**
+     * ------------------------------------------------------
+     * Helper to check if tab is visible using visibility API
+     * ------------------------------------------------------
+     */
+    window.getHiddenProp = function() {
+        var prefixes = ['webkit','moz','ms','o'];
+    
+        // if 'hidden' is natively supported just return it
+        if ( 'hidden' in document ) {
+            return 'hidden';
+        }
+    
+        // otherwise loop over all the known prefixes until we find one
+        for ( var i = 0; i < prefixes.length; i++ ){
+            if ( ( prefixes[i] + 'Hidden' ) in document ) 
+                return prefixes[i] + 'Hidden';
+        }
+
+        // otherwise it's not supported
+        return null;
+    };
+
+    window.isTabHidden = function() {
+        var prop = getHiddenProp();
+
+        if ( ! prop ) {
+            return false;
+        }
+    
+        return document[prop];
+    };
      
 }( window, window.document, undefined ) );
 
@@ -314,7 +347,8 @@
                 transDelay = 6000,
                 transTime = 500,
                 transTimeout = null,
-                isRotating = false;
+                isRotating = false,
+                visProp = getHiddenProp();
 
             if ( slideWrapper && slideWrapper.length ) {
                 slideWrapper = slideWrapper[0];
@@ -403,8 +437,21 @@
                 }, false );
 
                 transTimeout = setTimeout( rotate, transDelay );
-            }
 
+                // If we have slides, we want to stop rotating
+                //   if tab is not the one in focus
+                if ( visProp ) {
+                    var evtname = visProp.replace( /[H|h]idden/,'' ) + 'visibilitychange';
+                    document.addEventListener( evtname, function() {
+                        if ( isTabHidden() ) {
+                            clearTimeout( transTimeout );
+                        }
+                        else {
+                            transTimeout = setTimeout( rotate, transDelay );
+                        }
+                    }, false );
+                }
+            }
         }
     };
 

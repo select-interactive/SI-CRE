@@ -68,7 +68,8 @@
                 transDelay = 6000,
                 transTime = 500,
                 transTimeout = null,
-                isRotating = false;
+                isRotating = false,
+                visProp = getHiddenProp();
 
             if ( slideWrapper && slideWrapper.length ) {
                 slideWrapper = slideWrapper[0];
@@ -157,8 +158,21 @@
                 }, false );
 
                 transTimeout = setTimeout( rotate, transDelay );
-            }
 
+                // If we have slides, we want to stop rotating
+                //   if tab is not the one in focus
+                if ( visProp ) {
+                    var evtname = visProp.replace( /[H|h]idden/,'' ) + 'visibilitychange';
+                    document.addEventListener( evtname, function() {
+                        if ( isTabHidden() ) {
+                            clearTimeout( transTimeout );
+                        }
+                        else {
+                            transTimeout = setTimeout( rotate, transDelay );
+                        }
+                    }, false );
+                }
+            }
         }
     };
 
