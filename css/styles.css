@@ -3668,27 +3668,27 @@ a:hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\000034}}
-#content-wrapper {
+#contentWrapper {
   padding-top: 80px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\000037}}
-#content-wrapper.home {
+#contentWrapper.home {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp");
   background-attachment: fixed;
   background-position: center 80px;
   background-repeat: no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000313}}
-.no-webp #content-wrapper.home {
+.no-webp #contentWrapper.home {
   background-image: url("//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg");
 }
 @media (min-width: 125em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\000037}}
-  #content-wrapper.home {
+  #contentWrapper.home {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp");
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/layout\/_layout-helpers\.scss}line{font-family:\0000320}}
-  .no-webp #content-wrapper.home {
+  .no-webp #contentWrapper.home {
     background-image: url("//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg");
   }
 }
