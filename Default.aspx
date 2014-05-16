@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMeta" Runat="Server">
     <title>Commercial Real Estate Website Design and Development</title>
-    <meta name="description" content="">
+    <meta name="description" content="Select Interactive is a web development firm that specializes and the design and development of commercial real estate web projects.">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cphHead" Runat="Server">
