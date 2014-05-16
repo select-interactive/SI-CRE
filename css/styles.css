@@ -3311,15 +3311,15 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/base\/_typography\.scss}line{font-family:\00003100}}
 .heading {
   line-height: 1.1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
-.heading-primary {
-  font-size: 2.75em;
   margin-bottom: 22px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
+.heading-primary {
+  font-size: 2.875em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .heading-subtitle {
-  font-size: 1.375em;
+  font-size: 1.4375em;
   line-height: 1.4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
@@ -3718,7 +3718,7 @@ a:hover {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .copy-narrow {
-  max-width: 700px;
+  max-width: 750px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/helpers\/_mixins\.scss}line{font-family:\0000343}}
 .copy-med {
@@ -4075,18 +4075,18 @@ button:disabled,
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000371}}
 button.btn-action,
 .btn.btn-action {
-  background: transparent;
-  border: 1px solid #dda14a !important;
-  color: #dda14a !important;
-  font-size: 2.5em;
+  background: #dda14a;
+  border: 1px solid #dda14a;
+  color: white;
+  font-size: 1.875em;
   line-height: 1;
   padding: 15px 35px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000380}}
 button.btn-action:hover,
 .btn.btn-action:hover {
-  background: #dda14a !important;
-  color: white !important;
+  background: #d99635;
+  color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/inetpub\/wwwroot\/SI-CRE\/css\/sass\/components\/_buttons\.scss}line{font-family:\0000392}}
 button.btn-xl, button.btn-large,

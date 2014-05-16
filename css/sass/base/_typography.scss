@@ -99,15 +99,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
 	line-height: 1.1;
+	margin-bottom: $base-line-height;
 
 	@include child(primary) {
 		@extend .av-medium;
-		font-size: em(44px);
-		margin-bottom: $base-line-height;
+		font-size: em(46px);
 	}
 
 	@include child(subtitle) {
-		font-size: em(22px);
+		font-size: em(23px);
 		line-height: 1.4;
 	}
 

@@ -50,7 +50,7 @@
 	margin-right: auto;
 
 	@include child(narrow) {
-		max-width: 700px;
+		max-width: 750px;
 	}
 
 	@include child(med) {
