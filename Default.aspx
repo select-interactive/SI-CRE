@@ -29,7 +29,8 @@
             <div class="slide slide-right eq-height-item">
                 <div class="copy copy-narrow text-center">
                     <h2 class="heading heading-primary">Reach your potential viewers.</h2>
-                    <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience via Google, Bing, and Yahoo. Websites should be developed with search engine &ldquo;Best Practices&rdquo; from day one to ensure successful visibilty in search results. Your site should also be easily accessible on any device, from phone to PC. It should be implemented with a responsive web design strategy to support a multi-device world.</h3>
+                    <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience via Google, Bing, and Yahoo. Once found, a successful website should also be easily accessible on any platform to support today&rsquo;s multi-device world.</h3>
+                    <%--<h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience via Google, Bing, and Yahoo. Websites should be developed with search engine &ldquo;Best Practices&rdquo; from day one to ensure successful visibilty in search results. Your site should also be easily accessible on any device, from phone to PC. It should be implemented with a responsive web design strategy to support a multi-device world.</h3>--%>
                     <a href="#" class="btn btn-action">How To Reach Everyone</a>
                 </div>
             </div>
