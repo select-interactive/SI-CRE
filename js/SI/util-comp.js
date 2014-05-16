@@ -344,7 +344,7 @@
                 DIR_NEXT = 2,
                 index = 0,
                 len = 0,
-                transDelay = 7000,
+                transDelay = 8000,
                 transTime = 500,
                 transTimeout = null,
                 isRotating = false,

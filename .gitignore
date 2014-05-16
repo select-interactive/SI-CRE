@@ -12,3 +12,6 @@ WebWorkbench.mswwsettings
 #Ignore publish settings
 App_Data/
 website.publishproj
+
+#Don't publish web.config with db connection + user/pwd
+web.config
