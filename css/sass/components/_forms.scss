@@ -4,184 +4,134 @@
 
 /** Forms
  -----------------------------*/
+form,
 .form {
-	// Make all forms have space below them
-	margin: 0 0 $base-line-height;
+	background: #fefefe;
+	border: 1px solid #e0e0e0;
+	margin: 0 0 $base-line-height / 1.5;	
+	padding: gutter() * 2;
+	
+	@include box-shadow(inset 0 0 8px #ddd);
 
-	// Separating rows
+	@include mediaquery(large) {
+		//padding: $gutter-width;
+	}
+
+	// rows
 	.row {
-		margin: 0 0 $row-margin;
+		margin: 0 0 15px;
+	}
+
+	// options
+	.options {
+		margin: 0;
 		padding: 0;
-	}
 
-	// Inline forms -- by default
-	label {
-		display: inline-block;
-		margin-right: $label-margin-right;
-		width: $label-width;
-		
-		// labels for checkboxes and radio buttons
-		&.cb {
-			cursor: pointer;
-			display: inline-block !important;
-			margin-left: 4px !important;
-			vertical-align: middle;
-			width: auto;
-		}
-
-		// info blocks in labels
-		.info {
-			color: lighten($body-color, 10%);
-			font-size: .9em;
-			font-style: italic;
-		}
-	}	
-
-	// Block Forms -- label on top of input
-	&.block {
-		label {
+		li {
 			display: block;
-			margin: 0 0 5px;
-			width: auto;
+			margin: 0;
+			padding: 0;
+
+			@include mediaquery(large) {
+				display: inline;
+			}
 		}
 	}
 
-	// Form elements reset
-	select,
+	// labels -  by default go block 
+	label {
+		@extend .av-medium;
+		@extend .text-small;
+
+		display: block;
+		margin: 0 0 3px;
+
+		// inline labels
+		.form-inline &,
+		&.lbl-inline {
+			display: inline-block;
+			margin: 0 5px 0 0;
+		}
+
+		// labels for checkboxes/radio buttons
+		&.lbl-cb {
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 20px 0 5px;
+			vertical-align: middle;
+		}
+	}
+
+	// reset inputs/textareas/selects
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	input[type=url],
+	input[type=password],
 	textarea,
-	input[type="text"],
-	input[type="password"],
-	input[type="number"],
-	input[type="email"],
-	input[type="url"],
-	input[type="search"],
-	input[type="tel"],
-	.uneditable-input {
+	select {
+		border: 1px solid #ccc;
 		color: $body-color;
-		display: inline-block;
-		height: $input-height;
-		line-height: $base-line-height;
 		padding: $input-padding;
 
-		// Disabled State
-		&:disabled,
-		&:readonly {
-			background-color: $input-disabled-bg;
-			border-color: $input-disabled-border;
-			cursor: not-allowed;
+		// default to 100% width for mobile
+		width: 100%;
+
+		// focus state
+		&:focus {
+			border-color: $si-orange;
+			outline: rgba($si-orange, .8) solid 1px;
 		}
 
-		// Form feedback states
-		// invalid
+		// invalid fields
 		&.invalid {
+			background: lighten($error-bg, 7%);
 			border-color: $error-border;
 		}
-	}
 
-	// input and textarea widths
-	input,
-	textarea {
-		width: $input-width;
-	}
-	
-	// Full Width Forms
-	&.full-width {
-		label {
-			display: block;
-			margin: 0 0 2px;
-			width: auto;
-		}
-
-		textarea,
-		input[type="text"],
-		input[type="password"],
-		input[type="number"],
-		input[type="email"],
-		input[type="url"],
-		input[type="search"],
-		input[type="tel"] {
-			width: 99%;
+		@include mediaquery(large) {
+			max-width: 700px;
+			width: 100%;
 		}
 	}
 
-	// General quick sizing of inputs
-	.input-mini       { width: 60px; }
-	.input-small      { width: 90px; }
-	.input-medium     { width: 150px; }
-	.input-large      { width: 210px; }
-	.input-xlarge     { width: 270px; }
-	.input-xxlarge    { width: 530px; }
+	&.form-full-width {
+		input[type=text],
+		input[type=email],
+		input[type=tel],
+		input[type=url],
+		input[type=password],
+		textarea {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+	}
 	
-	// reset height of textarea because they have rows
+	// textarea specific
 	textarea {
 		height: auto;
+		height: 200px;
 		resize: none;
 	}
 
-	// Form element styles
-	textarea,
-	input[type="text"],
-	input[type="password"],
-	input[type="number"],
-	input[type="email"],
-	input[type="url"],
-	input[type="search"],
-	input[type="tel"],
-	.uneditable-input {
-		background-color: $input-bg;
-		border: 1px solid $input-border;
-
-		@include border-radius($input-border-radius);
-		@include box-shadow($input-box-shadow);
-		@include transition($input-transition);
-
-		// Focus State
-		&:focus {
-			border-color: $input-border-focus;
-			outline: 0;
-			outline: thin dotted \9; /* IE6-9 */
-
-			@include box-shadow($input-box-shadow-focus);
-		}
-	}
-
-	// Position Radio and Checkboxes Better
-	input[type="radio"],
-	input[type="checkbox"] {
-		cursor: pointer;
-		line-height: normal;
-		margin: 3px 0;
+	// checkboxes/radio buttons
+	input[type=checkbox],
+	iput[type=radio] {
+		margin: -2px 0 0;
 		vertical-align: middle;
 	}
-	
-	// Reset width of input buttons, radios, checkboxes
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	input[type="radio"],
-	input[type="checkbox"] {
-		width: auto; // Override of generic input selector
-	}
 
-	// Make uneditable textareas behave like a textarea
-	.uneditable-textarea {
-		height: auto;
-		width: auto;
-	}
-
-	// Set the height of select and file controls to match text inputs
-	select,
-	input[type="file"] {
-		line-height: 28px;
-	}
-
-	// Make select elements obey height by applying a border
-	select {
-		border: 1px solid $input-border;
-		width: $input-width + 10; /* default input width + 10px of padding that doesn't get applied */
+	// visible states
+	&.hidden,
+	.hidden {
+		display: none;
 	}
 }
 
+#form-login {
+	@include span(6);
+	@include pre(3);
+}
 
 /** Status
  -----------------------------*/

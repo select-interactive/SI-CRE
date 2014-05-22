@@ -71,6 +71,7 @@ button,
 	&.btn-action {
 		background: $si-orange;
 		border: 1px solid $si-orange;
+		border-radius: 4px;
 		color: $white;
 		font-size: em(30px);
 		line-height: 1;

@@ -5,7 +5,7 @@
  */
 (function( doc, $ ) {
 
-    var s;
+    var s, els;
     
     // global app object
     window.SI = {
@@ -13,15 +13,25 @@
         // global settings
         settings: {
             viewportmeta: doc.querySelector && doc.querySelector( 'meta[name="viewport"]' ),
-            ua: navigator.userAgent
+            ua: navigator.userAgent,
+
+            moduleId: -1
+        },
+
+        elements: {
+            editorWrapper: null,
+            quillEditor: null,
+            btnQuillSave: null
         },
 
         // kick off our app/page
         init: function() {
             s = this.settings;
+            els = this.elements;
 
             this.scaleFix();
             this.initSlides();
+            //this.checkUser();
         },
 
         // fix for iPhone viewport scale bug 
@@ -157,6 +167,17 @@
                     e.preventDefault();
                 }, false );
 
+                doc.addEventListener( 'keyup', function( e ) {
+                    if ( e.keyCode === 37 ) {
+                        rotate( DIR_PREV, true );
+                        e.preventDefault();
+                    }
+                    else if ( e.keyCode === 39 ) {
+                        rotate( DIR_NEXT, true );
+                        e.preventDefault();
+                    }
+                }, false );
+
                 transTimeout = setTimeout( rotate, transDelay );
 
                 // If we have slides, we want to stop rotating
@@ -172,6 +193,95 @@
                         }
                     }, false );
                 }
+            }
+        },
+
+        checkUser: function() {
+            if ( window.SIUser && SIUser.admin ) {
+                Modernizr.load([
+                {
+                    load: '/js/libs/quill.js',
+                    complete: function() {
+                        // create the editor and add it to the page
+                        els.editorWrapper = doc.createElement( 'div' );
+                        els.editorWrapper.id = 'quill-editor';
+                        els.editorWrapper.classList.add( 'quill-wrapper' );
+                        els.editorWrapper.classList.add( 'hidden' );
+
+                        doc.body.appendChild( els.editorWrapper );
+
+                        els.editorWrapper.innerHTML = '<div id="quill-toolbar" class="quill-toolbar">' +
+                                   '<span class="sc-format-group">' +
+                                   '<span title="Bold" class="sc-format-button sc-bold"></span>' +
+                                   '<span class="sc-format-separator"></span>' +
+                                   '<span title="Italic" class="sc-format-button sc-italic"></span>' +
+                                   '<span class="sc-format-separator"></span>' +
+                                   '<span title="Underline" class="sc-format-button sc-underline"></span>' +
+                                   '</span>' +
+                                   '</div>' +
+                                   '<div id="the-editor"><p>Hello World!</div>' +
+                                   '<button id="btn-quill-save">Save</button>';
+
+                        forEachElement( doc.querySelectorAll( '.module' ), function( el ) {
+                            el.addEventListener( 'click', function() {
+                                var temp = el.innerHTML;
+
+                                if ( ! el.classList.contains( 'editing' ) ) {
+                                    el.classList.add( 'editing' );
+
+                                    s.moduleId = parseInt( el.getAttribute( 'data-module-id' ), 10 );
+                                    console.log( els.quillEditor );
+                                    console.log( el.innerHTML );
+                                    
+                                    //els.editorWrapper.parentNode.removeChild( els.editorWrapper );
+                                    el.innerHTML = '';
+                                    el.appendChild( els.editorWrapper );
+                                    els.editorWrapper.classList.remove( 'hidden' );
+                                    
+                                    els.quillEditor = new Quill( '#the-editor', {
+                                        logLevel: false,
+                                        modules: {
+                                            'toolbar': { container: '#quill-toolbar' },
+                                            'image-tooltip': true,
+                                            'link-tooltip': true
+                                        },
+                                        theme: 'snow'
+                                    });
+
+                                    els.quillEditor.setHTML( temp );
+                                }
+                            }, false );
+                        });
+
+                        els.btnQuillSave = doc.getElementById( 'btn-quill-save' );
+                        els.btnQuillSave.addEventListener( 'click', function( e ) {
+                            var html = els.quillEditor.getHTML();
+
+                            //SI.ajax( '/webservices/wsContent.asmx/saveModule', {
+                            //    moduleId: s.moduleId,
+                            //    html: html
+                            //}, function( data ) {
+                            //    var el = els.editorWrapper.parentNode,
+                            //        rsp;
+                            //
+                            //    if ( data && data.d ) {
+                            //        rsp = JSON.parse( data.d );
+                            //
+                            //        if ( rsp.status === 'success' ) {
+                            //            el.innerHTML = html;
+                            //            el.classList.remove( 'editing' );
+                            //            s.moduleId = -1;
+                            //        }
+                            //        else {
+                            //            console.log( rsp.msg );
+                            //        }
+                            //    }
+                            //});
+
+                            console.log( html );
+                        }, false );
+                    }
+                }])
             }
         }
     };

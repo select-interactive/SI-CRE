@@ -85,8 +85,10 @@ module.exports = function( grunt ) {
                 undef: true,
 
                 globals: {
+                    forEachElement: true,
                     jQuery: true,
-                    Modernizr: true
+                    Modernizr: true,
+                    trimString: true
                 }
             }
         },
