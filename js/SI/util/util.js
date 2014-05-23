@@ -65,134 +65,139 @@
         // init any slides
         // can only have one "slides" per page
         initSlides: function() {
-            var slideWrapper = doc.querySelectorAll( '.slides' ),
-                slides,
+            var slideWrappers = doc.querySelectorAll( '.slides' ),
                 width = window.outerWidth,
-                btnPrev = doc.getElementById( 'slide-btn-prev' ),
-                btnNext = doc.getElementById( 'slide-btn-next' ),
-                rotate,
                 DIR_PREV = 1,
                 DIR_NEXT = 2,
-                index = 0,
-                len = 0,
                 transDelay = 8000,
                 transTime = 500,
-                transTimeout = null,
-                isRotating = false,
                 visProp = getHiddenProp();
 
-            if ( slideWrapper && slideWrapper.length ) {
-                slideWrapper = slideWrapper[0];
-                slides = slideWrapper.querySelectorAll( '.slide' );
-                len = slides.length;
+            if ( slideWrappers && slideWrappers.length ) {
+                forEachElement( slideWrappers, function( slideWrapper ) {
+                    var slides = slideWrapper.querySelectorAll( '.slide' ),
+                        btnPrev = slideWrapper.querySelectorAll( '.slides-arrows-prev' )[0],
+                        btnNext = slideWrapper.querySelectorAll( '.slides-arrows-next' )[0],
+                        index = 0,
+                        len = slides.length,
+                        rotate,
+                        isRotating = false,
+                        transTimeout = null;
+                    
+                    forEachElement( slides, function( el ) {
+                        el.style.width = width + 'px';
+                    });
 
-                forEachElement( slides, function( el ) {
-                    el.style.width = width + 'px';
-                });
+                    rotate = function( dir, stopRotating ) {
+                        var temp;
 
-                rotate = function( dir, stopRotating ) {
-                    var temp;
+                        if ( ! isRotating ) {
+                            isRotating = true;
 
-                    if ( ! isRotating ) {
-                        isRotating = true;
+                            if ( transTimeout ) {
+                                clearTimeout( transTimeout );
+                            }
 
-                        if ( transTimeout ) {
-                            clearTimeout( transTimeout );
-                        }
+                            if ( ! dir ) {
+                                dir = DIR_NEXT;
+                            }
 
-                        if ( ! dir ) {
-                            dir = DIR_NEXT;
-                        }
-
-                        if ( dir === DIR_NEXT ) {
-                            temp = index;
-                            slides[index].classList.remove( 'slide-center' );
-                            slides[index].classList.add( 'slide-left' );
-
-                            setTimeout( function() {
-                                slides[temp].classList.add( 'slide-no-trans' );
-                                slides[temp].classList.remove( 'slide-left' );
-                                slides[temp].classList.add( 'slide-right' );
+                            if ( dir === DIR_NEXT ) {
+                                temp = index;
+                                slides[index].classList.remove( 'slide-center' );
+                                slides[index].classList.add( 'slide-left' );
 
                                 setTimeout( function() {
-                                    slides[temp].classList.remove( 'slide-no-trans' );
-                                }, 100 );
-                            }, transTime );
-                        
-                            if ( ++index === len ) {
-                                index = 0;
-                            }
+                                    slides[temp].classList.add( 'slide-no-trans' );
+                                    slides[temp].classList.remove( 'slide-left' );
+                                    slides[temp].classList.add( 'slide-right' );
 
-                            slides[index].classList.remove( 'slide-right' );
-                            slides[index].classList.add( 'slide-center' );
-                        }
-                        else {
-                            temp = index;
-                            slides[index].classList.remove( 'slide-center' );
-                            slides[index].classList.add( 'slide-right' );
-
-                            // get the "next" slide and make sure it's on the left
-                            if ( --index < 0 ) {
-                                index = len - 1;
-                            }
+                                    setTimeout( function() {
+                                        slides[temp].classList.remove( 'slide-no-trans' );
+                                    }, 100 );
+                                }, transTime );
                         
-                            slides[index].classList.add( 'slide-no-trans' );
-                            slides[index].classList.remove( 'slide-right' );
-                            slides[index].classList.add( 'slide-left' );
+                                if ( ++index === len ) {
+                                    index = 0;
+                                }
+
+                                slides[index].classList.remove( 'slide-right' );
+                                slides[index].classList.add( 'slide-center' );
+                            }
+                            else {
+                                temp = index;
+                                slides[index].classList.remove( 'slide-center' );
+                                slides[index].classList.add( 'slide-right' );
+
+                                // get the "next" slide and make sure it's on the left
+                                if ( --index < 0 ) {
+                                    index = len - 1;
+                                }
+                        
+                                slides[index].classList.add( 'slide-no-trans' );
+                                slides[index].classList.remove( 'slide-right' );
+                                slides[index].classList.add( 'slide-left' );
+
+                                setTimeout( function() {
+                                    slides[index].classList.remove( 'slide-no-trans' );
+                                    slides[index].classList.remove( 'slide-left' );
+                                    slides[index].classList.add( 'slide-center' );
+                                }, 10 );
+                            }
 
                             setTimeout( function() {
-                                slides[index].classList.remove( 'slide-no-trans' );
-                                slides[index].classList.remove( 'slide-left' );
-                                slides[index].classList.add( 'slide-center' );
-                            }, 10 );
+                                isRotating = false;
+                            }, transTime );
+
+                            if ( ! stopRotating || stopRotating === null ) {
+                                transTimeout = setTimeout( rotate, transDelay + transTime );
+                            }
                         }
+                    };
 
-                        setTimeout( function() {
-                            isRotating = false;
-                        }, transTime );
-
-                        if ( ! stopRotating || stopRotating === null ) {
-                            transTimeout = setTimeout( rotate, transDelay + transTime );
-                        }
-                    }
-                };
-
-                btnPrev.addEventListener( 'click', function( e ) {
-                    rotate( DIR_PREV, true );
-                    e.preventDefault();
-                }, false );
-
-                btnNext.addEventListener( 'click', function( e ) {
-                    rotate( DIR_NEXT, true );
-                    e.preventDefault();
-                }, false );
-
-                doc.addEventListener( 'keyup', function( e ) {
-                    if ( e.keyCode === 37 ) {
+                    btnPrev.addEventListener( 'click', function( e ) {
                         rotate( DIR_PREV, true );
                         e.preventDefault();
-                    }
-                    else if ( e.keyCode === 39 ) {
+                    }, false );
+
+                    btnNext.addEventListener( 'click', function( e ) {
                         rotate( DIR_NEXT, true );
                         e.preventDefault();
-                    }
-                }, false );
-
-                transTimeout = setTimeout( rotate, transDelay );
-
-                // If we have slides, we want to stop rotating
-                //   if tab is not the one in focus
-                if ( visProp ) {
-                    var evtname = visProp.replace( /[H|h]idden/,'' ) + 'visibilitychange';
-                    document.addEventListener( evtname, function() {
-                        if ( isTabHidden() ) {
-                            clearTimeout( transTimeout );
-                        }
-                        else {
-                            transTimeout = setTimeout( rotate, transDelay );
-                        }
                     }, false );
-                }
+
+                    if ( slideWrappers.length === 1 ) {
+                        doc.addEventListener( 'keyup', function( e ) {
+                            if ( e.keyCode === 37 ) {
+                                rotate( DIR_PREV, true );
+                                e.preventDefault();
+                            }
+                            else if ( e.keyCode === 39 ) {
+                                rotate( DIR_NEXT, true );
+                                e.preventDefault();
+                            }
+                        }, false );
+                    }
+
+                    if ( slideWrapper.classList.contains( 'slides-auto' ) ) {
+                        transTimeout = setTimeout( rotate, transDelay );
+                    }
+
+                    // If we have slides, we want to stop rotating
+                    //   if tab is not the one in focus
+                    if ( visProp ) {
+                        var evtname = visProp.replace( /[H|h]idden/,'' ) + 'visibilitychange';
+                        document.addEventListener( evtname, function() {
+                            if ( isTabHidden() ) {
+                                clearTimeout( transTimeout );
+                            }
+                            else {
+                                if ( slideWrapper.classList.contains( 'slides-auto' ) ) {
+                                    transTimeout = setTimeout( rotate, transDelay );
+                                }
+                            }
+                        }, false );
+                    }
+                });
             }
         },
 

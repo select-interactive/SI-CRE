@@ -147,7 +147,8 @@ ul, ol {
 	padding: 0;
 	margin: 0 0 ($base-line-height / 2) 25px;
 
-	&.list-basic {
+	&.list-basic,
+    &.list-action-links {
 		@extend %list-style-none;
 		@extend %no-padding;
 		margin-left: 0;
@@ -176,6 +177,17 @@ li {
 		background: url('//static.select-interactive.com/img/list-style.v1.png') no-repeat 0 6px;
 		padding-left: 15px;
 	}
+
+    .list-action-links & {
+        font-size: em($base-font-size * 1.75);
+        line-height: 1;
+        margin: 20px 0 0;
+
+        a {
+            @include link-colors($si-orange, darken($si-orange, 10%), $si-orange);
+            @include transition(all .1s ease);
+        }
+    }
 }
 
 

@@ -103,6 +103,16 @@
 	}
 
 
+    // ------------------------------
+    // Containers with primary images
+    // ------------------------------
+    @include child(img-primary-right) {
+        @extend %float-right;
+        padding-left: gutter() * 2;
+        padding-right: gutter();
+    }
+
+
 	// ----------------
 	// Container Layout
 	// ----------------

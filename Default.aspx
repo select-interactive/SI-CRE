@@ -10,7 +10,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphContent" Runat="Server">
     <div class="container-full-width container-vert-padding container-bg-city eq-height">
-        <div class="slides eq-height-item">
+        <div class="slides slides-auto eq-height-item">
             <div class="slide slide-center eq-height-item">
                 <div class="copy copy-narrow text-center">
                     <asp:Literal runat="server" ID="ltrlModuleSlide1" />
