@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/masterpages/standard-blank.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="about_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMeta" Runat="Server">
-    <title>Passionate Web Developers</title>
+    <title>Passionate Web Developers Specializing in the Commercial Real Estate Industry</title>
+    <meta name="description" content="A developer led team with a desire to create the most creative and engaging commercial real estate websites.">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cphHead" Runat="Server">
@@ -17,19 +18,17 @@
     <div class="container-full-width container-vert-padding container-bg-white container-cols-2">
         <div class="container copy eq-height">
             <div class="col border-right border-right-orange eq-height-item">
-                <h3 class="heading heading-secondary">Our Process</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </p>
+                <h3 class="heading heading-secondary">Get to Know Us</h3>
+                <p>Select Interactive is a developer led team with a strong desire to build a better web. As a team that obsesses over the smallest details to provide the fastest loading, mobile friendly sites, we take pride in delivering the best possible user interaction.</p>
+                <p>More than just development, Select Interactive always has an eye on current web trends. We maintain an agile design strategy always pushing forward to keep our clients online presence up-to-date.</p>
+                <h4 class="heading heading-secondary mb-0">Recognition</h4>
+                <ul class="list-basic list-arrows copy-default">
+                    <li>2014 Recipient of the GD USA American Web Design Award</li>
+                    <li>In 2013 lead developer, Jeremy Burton, was 1 of 200 developers world-wide selected to attend <a href="http://edgeconf.com/2013-nyc/" target="_blank">Edge Conf 2013</a> to discuss advanced, cutting-edge web technologies.</li>
+                </ul>
             </div>
             <div class="col eq-height-item">
-                <img src="//static.select-interactive.com/CRE/img/desk.v1.jpg" width="650" height="650" />
+                <img src="//static.select-interactive.com/CRE/img/desk2.v1.jpg" width="650" height="650" />
             </div>
         </div>
     </div>

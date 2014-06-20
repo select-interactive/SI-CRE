@@ -18,10 +18,10 @@
         <div class="col eq-height-item">
             <h4 class="heading heading-basic color-si-orange">Learn More.</h4>
             <ul class="list-basic list-arrows">
-                <li><a href="/">Components</a></li>
-                <li><a href="/">Our Work</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="/">Contact Us</a></li>
+                <li><a href="/components/">Components</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
             </ul>
         </div>
         <div class="col eq-height-item">

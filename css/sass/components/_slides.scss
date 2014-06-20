@@ -51,4 +51,49 @@
 	@include child(no-trans) {
 		@include transition(transform 0s ease);
 	}
+
+    @include child(component) {
+        @extend %display-inline-block;
+        @extend %position-relative;
+
+        @include child(overlay) {
+            @extend %position-absolute;
+
+            background: rgba($si-orange, .9);
+            color: $white;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+
+            @include opacity(0);
+            @include transition(opacity .2s ease);
+
+            &:hover {
+                @include opacity(1);
+            }
+        }
+
+        @include child(overlay-white) {
+            background: rgba($white, .9);
+            color: $si-orange;
+        }
+
+        @include child(label) {
+            @extend %position-absolute;
+
+            border: 1px solid $white;
+            border-radius: 3px;
+            font-size: 2em;
+            left: 50%;
+            padding: 10px 20px;
+            top: 50%;
+
+            @include transform(translate3d(-50%, -50%, 0));
+
+            .slide-component-overlay-white & {
+                border-color: $si-orange;
+            }
+        }
+    }
 }

@@ -88,6 +88,7 @@ module.exports = function( grunt ) {
                     forEachElement: true,
                     jQuery: true,
                     Modernizr: true,
+                    SI: true,
                     trimString: true
                 }
             }

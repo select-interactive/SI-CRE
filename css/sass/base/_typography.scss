@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6 {
 	@include child(subtitle) {
 		font-size: em(23px);
 		line-height: 1.4;
+
+        a {
+            @extend %text-decoration-none;
+            @include link-colors($body-color, $body-color, $body-color);
+        }
 	}
 
 	@include child(secondary) {
@@ -196,4 +201,20 @@ li {
 // -----
 a {
 	@include link-colors($link-color, $link-color-hover);	
+
+    .copy-default & {
+        @extend %text-decoration-none;
+        color: $si-orange !important;
+
+        &:hover {
+            color: $si-orange !important;
+        }
+
+        .fa {
+            @extend %display-inline-block;
+            color: darken($si-orange, 8%);
+            margin-right: 0px;
+            width: 30px;
+        }
+    }
 }

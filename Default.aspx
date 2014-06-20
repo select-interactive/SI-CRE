@@ -14,25 +14,16 @@
             <div class="slide slide-center eq-height-item">
                 <div class="copy copy-narrow text-center">
                     <asp:Literal runat="server" ID="ltrlModuleSlide1" />
-                    <%--<h2 class="heading heading-primary">Why does your building<br />need a website?</h2>
-                    <h3 class="heading heading-subtitle">It&rsquo;s the first impression potential tenants or buyers have of the property before they set foot in it. As an owner or marketing representative of a commercial real estate property, what should your website communicate about your asset and how does it distinguish it?</h3>
-                    <a href="#" class="btn btn-action">Learn More</a>--%>
                 </div>
             </div>
             <div class="slide slide-right eq-height-item">
                 <div class="copy copy-narrow text-center">
                     <asp:Literal runat="server" ID="ltrlModuleSlide2" />
-                    <%--<h2 class="heading heading-primary">Effectively communicate your message.</h2>
-                    <h3 class="heading heading-subtitle">Your site needs to kept be up-to-date and designed for ease-of-access from any device and location. Select Interactive specializes in developing custom content management systems (CMS) giving you the ability easily update your site&rsquo;s content and data from anywhere.</h3>
-                    <a href="#" class="btn btn-action">Built To Meet Your Needs</a>--%>
                 </div>
             </div>
             <div class="slide slide-right eq-height-item">
                 <div class="copy copy-narrow text-center">
                     <asp:Literal runat="server" ID="ltrlModuleSlide3" />
-                    <%--<h2 class="heading heading-primary">Reach your potential viewers.</h2>
-                    <h3 class="heading heading-subtitle">Search engine optimization (SEO) is a must to reach your maximum audience via Google, Bing, and Yahoo. Once found, a successful website should also be easily accessible on any platform to support today&rsquo;s multi-device world.</h3>
-                    <a href="#" class="btn btn-action">How To Reach Everyone</a>--%>
                 </div>
             </div>
             <a href="#" id="slide-btn-prev" class="slides-arrows slides-arrows-prev"></a>
@@ -47,8 +38,6 @@
                     <h3 class="heading heading-secondary">Experience</h3>
                 </div>
                 <asp:Literal runat="server" ID="ltrlModuleExperience" />
-                <%--<p>When selecting a web development firm, it&rsquo;s imperative for you to work with a company that understands your business. Select Interactive developers have the experience in and knowledge of the industry that allows us to work seamlessly with owners, leasing, and marketing teams.</p>--%>
-                <%--<p>When selecting a web development firm, it&rsquo;s imperative for you to work with a company that understands your business. Select Interactive developers have been involved in both commercial and residential real estate projects dating back to the 1990&rsquo;s. We have the experience in and knowledge of the industry that allows us to work seamlessly with building owners, leasing teams, and marketing teams.</p>--%>
             </div>
             <div class="col">
                 <div class="text-center">
@@ -56,8 +45,6 @@
                     <h3 class="heading heading-secondary">Design</h3>
                 </div>
                 <asp:Literal runat="server" ID="ltrlModuleDesign" />
-                <%--<p>A good design is critical to successfully communicate the essential information of your asset. At Select Interactive we create custom designs and user experiences based upon an extensive evaluation of your unique needs, marketing strategy, and brand.</p>--%>
-                <%--<p>A good design is critical to successfully communicate the essential information of your asset. Select Interactive can create a custom design based upon an extensive evaluation of your unique needs. We can work with your marketing team to present a high quality, professional representation of your overall marketing plan for the web.</p>--%>
             </div>
             <div class="col">
                 <div class="text-center">
@@ -65,16 +52,12 @@
                     <h3 class="heading heading-secondary">Engineering</h3>
                 </div>
                 <asp:Literal runat="server" ID="ltrlModuleEngineering" />
-                <%--<p>Our engineering team develops sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community.</p>--%>
-                <%--<p>Select Interactive engineers develop sites using the latest web technologies, giving us the ability to ensure your site loads quickly and functions consistently across all devices. We are engineers first, and are widely regarded as experts in the development community. We know how to implement the most creative designs, without sacrificing performance or usability.</p>--%>
             </div>
         </div>
     </div>
     <div class="container-full-width container-vert-padding container-bg-city container-bg-austin">
         <div class="copy copy-med text-center text-larger">
             <asp:Literal runat="server" ID="ltrlModuleSummary" />
-            <%--<h3 class="heading heading-secondary">A Website Development Firm<br />That Knows Commercial Real Estate</h3>
-            <p >Select Interactive specializes in the design and development of commercial real estate websites. We create designs that clearly communicate your message to the target audience, while also leaving them with a positive feeling of your building. Our engineers understand how viewers interact with the information, and excel at implementing the best user experience possible.</p>--%>
         </div>
     </div>
     <div class="container-full-width container-vert-padding container-bg-gray-light">

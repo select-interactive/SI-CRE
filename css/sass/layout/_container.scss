@@ -73,6 +73,15 @@
 		}
 	}
 
+    @include child(bg-orange) {
+		background: $si-orange;
+		color: $white;
+
+		a {
+			@include link-colors($white, $white, $white);
+		}
+	}
+
 
 	// -------------------------
 	// Containers with bg images
@@ -124,6 +133,18 @@
 
 			&:nth-child(2n) {
 				@include span(5);
+			}
+		}
+	}
+
+    @include child(cols-2-eq) {
+		.col {
+			&:first-child {
+				@include span(6);
+			}
+
+			&:nth-child(2n) {
+				@include span(6);
 			}
 		}
 	}

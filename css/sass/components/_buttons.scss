@@ -84,6 +84,22 @@ button,
 		}
 	}
 
+    &.btn-submit {
+        background: $si-orange;
+		border: 1px solid $si-orange;
+		border-radius: 2px;
+		color: $white;
+		font-size: em(20px);
+		line-height: 1;
+		padding: 10px 30px;
+		
+		
+		&:hover {
+			background: darken($si-orange, 5%);
+			color: $white;
+		}
+    }
+
 
 	// ------------
 	// Button Sizes
