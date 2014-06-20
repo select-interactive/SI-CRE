@@ -67,5 +67,5 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="cphJS" Runat="Server">
-    <script defer src="/js/si/contact.v-1.0.js"></script>
+    <script defer src="/js/si/build/contact.v-1.0.min.js"></script>
 </asp:Content>

@@ -28,6 +28,8 @@
                     <li>Web Performance Optimization</li>
                     <li>Website Consultation</li>
                 </ul>
+                <h3 class="heading heading-secondary mb-0">Our Difference</h3>
+                <p style="margin-top:15px;">Our process starts with you. We value our clients first and aim to act as an extension of their business through digital experiences. No templates here. We offer packages and thought innovation to meet any property budget.</p>
                 <a href="/contact/" class="btn btn-action">Get Started</a>
             </div>
             <div class="col eq-height-item">
