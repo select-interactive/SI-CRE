@@ -23,7 +23,7 @@
                 <p>More than just development, Select Interactive always has an eye on current web trends. We maintain an agile design strategy always pushing forward to keep our clients online presence up-to-date.</p>
                 <h4 class="heading heading-secondary mb-0">Recognition</h4>
                 <ul class="list-basic list-arrows copy-default">
-                    <li>2014 Recipient of the GD USA American Web Design Award</li>
+                    <li>2014 Recipient of the GD USA American Web Design Award.</li>
                     <li>In 2013 lead developer, Jeremy Burton, was 1 of 200 developers world-wide selected to attend <a href="http://edgeconf.com/2013-nyc/" target="_blank">Edge Conf 2013</a> to discuss advanced, cutting-edge web technologies.</li>
                 </ul>
             </div>
