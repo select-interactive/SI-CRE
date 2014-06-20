@@ -61,6 +61,8 @@
                     <li><a href="https://plus.google.com/106726509160059301827/about" target="_blank"><i class="fa fa-google-plus"></i>Add Us to a Google+ Circle</a></li>
                     <li><a href="http://g.co/maps/529t3" target="_blank"><i class="fa fa-map-marker"></i>Get Directions</a></li>
                 </ul>
+                <h4 class="heading heading-basic color-si-orange mb-0">Select Interactive</h4>
+                <p>3343 Locke Ave.<br />Suite 107<br />Fort Worth, TX 76107</p>
             </div>
         </div>
     </div>

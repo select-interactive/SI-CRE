@@ -42,6 +42,8 @@
                     <li><a href="http://www.lenoxtowersbuckhead.com" target="_blank">www.lenoxtowersbuckhead.com</a></li>
                     <li><a href="http://www.upaustin.com" target="_blank">www.upaustin.com</a></li>
                     <li><a href="http://www.hiddengrovedallas.com/" target="_blank">www.hiddengrovedallas.com</a></li>
+                    <li><a href="http://www.oilgas-startelegram.com/" target="_blank">www.oilgas-startelegram.com</a></li>
+
                 </ul>
                 <h4 class="heading heading-secondary mb-0">Related Real Estate Projects</h4>
                 <ul class="list-basic list-arrows copy-default">
