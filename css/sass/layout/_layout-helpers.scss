@@ -5,7 +5,9 @@
 	padding-top: 80px;
 
 	&.home,
-	&.about {
+	&.about,
+    &.services,
+    &.contact {
 		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp');
 		background-attachment: fixed;
 		background-position: center 80px;
