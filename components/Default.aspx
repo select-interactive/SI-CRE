@@ -33,19 +33,19 @@
             <div class="slide slide-center eq-height-item">
                 <a class="slide-component" href="http://www.regionsplaza.com/availabilities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/regions-plaza.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/regions-plaza.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.lenoxtowersbuckhead.com/availabilities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/lenox-towers.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/lenox-towers.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.bbvacompassplaza.com/space/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/bbva-compass-plaza.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/availabilities/bbva-compass-plaza.v2.webp", "png")%>" />
                 </a>
             </div>
             <a href="#" class="slides-arrows slides-arrows-prev"></a>
@@ -61,25 +61,25 @@
             <div class="slide slide-center eq-height-item">
                 <a class="slide-component" href="http://www.regionsplaza.com/experience/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/regions-plaza.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/regions-plaza.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.bbvacompassplaza.com/gallery/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/bbva-compass-plaza.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/bbva-compass-plaza.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.satellite-place.com/gallery/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/satellite-place.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/satellite-place.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.trammellcrowcenter.com/gallery/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/trammell-crow-center.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/trammell-crow-center.v2.webp", "png")%>" />
                 </a>
             </div>
             <a href="#" class="slides-arrows slides-arrows-prev"></a>
@@ -95,19 +95,19 @@
             <div class="slide slide-center eq-height-item">
                 <a class="slide-component" href="http://www.trammellcrowcenter.com/amenities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/trammell-crow-center.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/trammell-crow-center.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.satellite-place.com/amenities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/satellite-place.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/satellite-place.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.upaustin.com/amenity/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/university-park.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/university-park.v2.webp", "png")%>" />
                 </a>
             </div>
             <a href="#" class="slides-arrows slides-arrows-prev"></a>
@@ -123,13 +123,13 @@
             <div class="slide slide-center eq-height-item">
                 <a class="slide-component" href="http://www.regionsplaza.com/map/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/ingress-egress/regions-plaza.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/ingress-egress/regions-plaza.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.trammellcrowcenter.com/location/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/ingress-egress/trammell-crow-center.v1.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/ingress-egress/trammell-crow-center.v2.webp", "png")%>" />
                 </a>
             </div>
             <a href="#" class="slides-arrows slides-arrows-prev"></a>
