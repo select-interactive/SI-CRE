@@ -193,28 +193,30 @@
                     });
                 };
 
-            if ( imgLen > 0 ) {
-                for ( var i = 0; i < imgLen; i++ ) {
-                    imgsComplete[i] = false;
-                }
-
-                window.forEachElement( imgs, function( el, i ) {
-                    var index = i;
-                            
-                    if ( el.complete ) {
-                        imgsComplete[index] = true;
-                        checkComplete();
+            if ( ! row.classList.contains( 'eq-height-no-mbl' ) || window.mq( '(min-width:1024px' ) ) {
+                if ( imgLen > 0 ) {
+                    for ( var i = 0; i < imgLen; i++ ) {
+                        imgsComplete[i] = false;
                     }
-                    else {
-                        el.addEventListener( 'load', function() {
+
+                    window.forEachElement( imgs, function( el, i ) {
+                        var index = i;
+                                
+                        if ( el.complete ) {
                             imgsComplete[index] = true;
                             checkComplete();
-                        }, false );
-                    }
-                });
-            }
-            else {
-                imgsLoaded();
+                        }
+                        else {
+                            el.addEventListener( 'load', function() {
+                                imgsComplete[index] = true;
+                                checkComplete();
+                            }, false );
+                        }
+                    });
+                }
+                else {
+                    imgsLoaded();
+                }
             }
         });
     }

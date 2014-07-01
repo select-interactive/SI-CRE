@@ -29,7 +29,7 @@
                     <li>In 2013 lead developer, Jeremy Burton, was 1 of 200 developers world-wide selected to attend <a href="http://edgeconf.com/2013-nyc/" target="_blank">Edge Conf 2013</a> to discuss advanced, cutting-edge web technologies.</li>
                 </ul>
             </div>
-            <div class="col eq-height-item">
+            <div class="col eq-height-item no-mbl">
                 <img src="//static.select-interactive.com/CRE/img/desk2.v1.jpg" width="650" height="650" />
             </div>
         </div>

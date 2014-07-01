@@ -55,6 +55,13 @@
 		    padding-top: $container-vert-padding;
         }
 	}
+    
+    @include child(no-hor-padding) {
+        @include mediaquery(large) {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
 
 
 	// ----------------
@@ -126,21 +133,53 @@
 	}
 
 	@include child(bg-austin) {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/austin-orange.v2.webp');
 		color: $white;
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/austin-orange.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/austin-orange.v2.jpg');
 		}
+
+        @include mediaquery(large) {
+            background-image: url('//static.select-interactive.com/CRE/img/skylines/med/austin-orange.v2.webp');
+
+            .no-webp & {
+			    background-image: url('//static.select-interactive.com/CRE/img/skylines/med/austin-orange.v2.jpg');
+		    }
+        }
+
+        @include mediaquery(massive) {
+            background-image: url('//static.select-interactive.com/CRE/img/skylines/large/austin-orange.v2.webp');
+
+            .no-webp & {
+			    background-image: url('//static.select-interactive.com/CRE/img/skylines/large/austin-orange.v2.jpg');
+		    }
+        }
 	}
 
 	@include child(bg-dallas) {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/dallas.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/dallas.v2.webp');
 		color: $si-gray-darkest;
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/dallas.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/dallas.v2.jpg');
 		}
+
+        @include mediaquery(large) {
+            background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v2.webp');
+
+            .no-webp & {
+			    background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v2.jpg');
+		    }
+        }
+
+        @include mediaquery(massive) {
+            background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v2.webp');
+
+            .no-webp & {
+			    background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v2.jpg');
+		    }
+        }
 	}
 
 
@@ -161,10 +200,14 @@
 		.col {
             @include full;
             margin-bottom: gutter() * 2;
+            padding-left: 0;
+            padding-right: 0;
 
             @include mediaquery(large) {
                 @include nobreak;
                 margin-bottom: 0;
+                padding-left: gutter();
+                padding-right: gutter();
 
 			    &:first-child {
 			    	@include span(7);
@@ -180,8 +223,16 @@
     @include child(cols-2-eq) {
 		.col {
             @include full;
+            margin-bottom: gutter() * 2;
+            padding-left: 0;
+            padding-right: 0;
 
             @include mediaquery(large) {
+                @include nobreak;
+                margin-bottom: 0;
+                padding-left: gutter();
+                padding-right: gutter();
+
 			    &:first-child {
 				    @include span(6);
 			    }
@@ -196,19 +247,25 @@
 	@include child(cols-3) {
 		.col {
             @include full;
+            padding-left: 0;
+            padding-right: 0;
 
             @include mediaquery(large) {
                 @include nobreak;
                 @include span(4);
+                padding-left: gutter();
+                padding-right: gutter();
             }
 		}
 	}
 
 	.border-right {
-		border-right: 1px solid $white;
+        @include mediaquery(large) {
+		    border-right: 1px solid $white;
 
-		@include child(orange) {
-			border-right-color: $si-orange;
-		}
+		    @include child(orange) {
+		    	border-right-color: $si-orange;
+		    }
+        }
 	}
 }

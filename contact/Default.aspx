@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="container-full-width container-vert-padding container-bg-white container-cols-2">
-        <div class="container copy eq-height">
+        <div class="container copy eq-height eq-height-no-mbl">
             <div class="col eq-height-item">
                 <div id="form-contact" class="form full-width">
                     <h3 class="heading heading-secondary">Get Started</h3>

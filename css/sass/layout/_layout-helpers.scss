@@ -12,72 +12,101 @@
 	&.about,
     &.services,
     &.contact {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/dallas.v2.webp');
 		background-attachment: fixed;
 		background-position: center 49px;
 		background-repeat: no-repeat;
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/dallas.v2.jpg');
 		}
 
         @include mediaquery(large) {
             background-position: center 80px;
+            background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v2.webp');
+
+            no-webp & {
+			    background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v2.jpg');
+		    }
         }
 
 		@include mediaquery(massive) {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v2.webp');
 
 			.no-webp & {
-				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.jpg');
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v2.jpg');
 			}
 		}
 	}
 
 	&.about {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/nyc.v2.webp');
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/nyc.v2.jpg');
 		}
 
-		@include mediaquery(massive) {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.webp');
+        @include mediaquery(large) {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v2.webp');
 
 			.no-webp & {
-				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v1.jpg');
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/med/nyc.v2.jpg');
+			}
+		}    
+    
+		@include mediaquery(massive) {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v2.webp');
+
+			.no-webp & {
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/nyc.v2.jpg');
 			}
 		}
 	}
 
     &.services {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/atl.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/atl.v2.webp');
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/atl.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/atl.v2.jpg');
+		}
+
+        @include mediaquery(large) {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/atl.v2.webp');
+
+			.no-webp & {
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/med/atl.v2.jpg');
+			}
 		}
 
 		@include mediaquery(massive) {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/atl.v1.webp');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/atl.v2.webp');
 
 			.no-webp & {
-				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/atl.v1.jpg');
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/atl.v2.jpg');
 			}
 		}
 	}
 
     &.contact {
-		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/fw.v1.webp');
+		background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/fw.v2.webp');
 
 		.no-webp & {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/fw.v1.jpg');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/sm/fw.v2.jpg');
+		}
+
+        @include mediaquery(large) {
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/fw.v2.webp');
+
+			.no-webp & {
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/med/fw.v2.jpg');
+			}
 		}
 
 		@include mediaquery(massive) {
-			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/fw.v1.webp');
+			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/fw.v2.webp');
 
 			.no-webp & {
-				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/fw.v1.jpg');
+				background-image: url('//static.select-interactive.com/CRE/img/skylines/large/fw.v2.jpg');
 			}
 		}
 	}

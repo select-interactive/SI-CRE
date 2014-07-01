@@ -10,7 +10,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphContent" Runat="Server">
     <div class="container-full-width container-vert-padding">
-        <img class="container-img-primary-right" src="<%= (New SI_UTIL).getImg("CRE/img/components/components-header.v1.webp", "png") %>" width="785" height="612" alt="Commercial Real Estate Property Availabilities" />
+        <img class="container-img-primary-right no-mbl" src="<%= (New SI_UTIL).getImg("CRE/img/components/components-header.v1.webp", "png") %>" width="785" height="612" alt="Commercial Real Estate Property Availabilities" />
         <div class="container">
             <h2 class="heading heading-primary">Components of Commercial Real Estate Property Websites</h2>
             <p class="heading heading-subtitle">Designing a web platform that gives immediate recognition to your property brand, its location, availabilities and its selling points is key in evoking user engagement. You want potential tenants to connect themselves with your brand, establishing interest before even stepping foot on the property.</p>

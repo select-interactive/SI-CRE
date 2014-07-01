@@ -19,7 +19,7 @@
 			@include opacity(1);
 		}
 
-        @include mediaquery(tabletPlus) {
+        @include mediaquery(large) {
             display: inline-block;
         }
 
@@ -41,9 +41,7 @@
 .slide {
 	@extend %position-absolute;
 
-    padding: 0 15px;
-
-	@include transform(translateX(100%));
+    @include transform(translateX(100%));
 	@include transition(transform .5s ease-in-out);
 
 	@include child(center) {

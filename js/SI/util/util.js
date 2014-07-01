@@ -74,9 +74,8 @@
 
         // init any slides
         initSlides: function() {
-            console.log( doc.body.offsetWidth );
             var slideWrappers = doc.querySelectorAll( '.slides' ),
-                width = doc.body.offsetWidth,
+                width = doc.body.offsetWidth - 30,
                 DIR_PREV = 1,
                 DIR_NEXT = 2,
                 transDelay = 8000,

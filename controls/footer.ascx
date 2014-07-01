@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="footer.ascx.vb" Inherits="controls_footer" %>
 <footer id="footer-main" class="container-full-width container-vert-padding container-bg-gray-dark container-cols-3">
-    <div class="container eq-height">
+    <div class="container eq-height  eq-height-no-mbl">
         <div class="col eq-height-item">
             <h4 class="heading heading-basic color-si-orange">Connect.</h4>
             <ul class="list-basic">

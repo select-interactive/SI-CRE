@@ -16,6 +16,10 @@
     @include mediaquery(large) {
         padding: 10px 0;
     }
+
+    .container {
+        padding: 0;
+    }
 }
 
 #masthead {
@@ -35,7 +39,7 @@
     top: 49px;
 	width: 260px;    
         
-    @include transform(translateX(260px));
+    @include transform(translateX(264px));
     @include transition(transform .2s ease);
 
     &.nav-open {
@@ -49,8 +53,14 @@
 	}
 
 	li {
+        border-top: 1px solid #fafafa;
         color: #fafafa;
-		margin: 0 0 10px 0;
+        margin: 0;
+		padding: 0;
+
+        &:first-child {
+            border-top: 0;
+        }
 
         &:before {
             content: "//";
@@ -77,7 +87,7 @@
 
 		border-bottom: 2px solid transparent;
 		font-size: em(19px);
-		padding: 0 2px 8px;
+		padding: 8px 0;
 
 		@include link-colors(#fafafa, #fafafa, #fafafa);
 		@include transition(all .3s ease);
@@ -125,6 +135,7 @@
 	    }
 
         a {
+            padding: 0 2px 8px;
             @include link-colors($si-gray-darker, $si-gray-darkest, $si-gray-darkest);
 
 		    &:hover {

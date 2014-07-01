@@ -9,7 +9,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphContent" Runat="Server">
-    <div class="container-full-width container-vert-padding container-bg-city eq-height">
+    <div class="container-full-width container-vert-padding container-no-hor-padding container-bg-city eq-height">
         <div class="slides slides-auto eq-height-item">
             <div class="slide slide-center eq-height-item">
                 <div class="copy copy-narrow text-center">
