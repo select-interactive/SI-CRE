@@ -103,12 +103,20 @@ h1, h2, h3, h4, h5, h6 {
 
 	@include child(primary) {
 		@extend .av-medium;
-		font-size: em(46px);
+		font-size: em(30px);
+
+        @include mediaquery(tabletPlus) {
+            font-size: em(46px);
+        }
 	}
 
 	@include child(subtitle) {
-		font-size: em(23px);
+		font-size: em(18px);
 		line-height: 1.4;
+
+        @include mediaquery(tabletPlus) {
+            font-size: em(23px);
+        }
 
         a {
             @extend %text-decoration-none;
@@ -122,11 +130,15 @@ h1, h2, h3, h4, h5, h6 {
 
 		border: 1px solid $si-gray-lighter;
 		border-radius: 3px;
-		font-size: em(24px);
+		font-size: em(18px);
 		letter-spacing: 1px;
 		line-height: 1.2;
 		margin: 0 auto $base-line-height;
 		padding: 7px 25px 5px;
+
+        @include mediaquery(tabletPlus) {
+            font-size: em(24px);
+        }
 	}
 
 	@include child(basic) {

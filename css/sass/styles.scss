@@ -17,12 +17,12 @@
 @import "helpers/helpers";
 @import "helpers/mixins";
 
-// Base Stuff -- Variables and Typography
+// Base Stuff -- Grid, Variables and Typography
+@import "layout/grid";
 @import "base/variables";
 @import "base/typography";
 
 // Layout
-@import "layout/grid";
 @import "layout/susy";
 @import "layout/layout-helpers";
 @import "layout/container";

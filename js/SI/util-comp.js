@@ -309,6 +309,7 @@
             els = this.elements;
 
             this.scaleFix();
+            this.initNav();
             this.initSlides();
             //this.checkUser();
         },
@@ -341,11 +342,20 @@
             });
         },
 
+        initNav: function() {
+            doc.getElementById( 'nav-trigger' ).addEventListener( 'click', toggleNav, false );
+
+            function toggleNav( e ) {
+                doc.getElementById( 'nav-main' ).classList.toggle( 'nav-open' );
+                e.preventDefault();
+            }
+        },
+
         // init any slides
-        // can only have one "slides" per page
         initSlides: function() {
+            console.log( doc.body.offsetWidth );
             var slideWrappers = doc.querySelectorAll( '.slides' ),
-                width = window.outerWidth,
+                width = doc.body.offsetWidth,
                 DIR_PREV = 1,
                 DIR_NEXT = 2,
                 transDelay = 8000,

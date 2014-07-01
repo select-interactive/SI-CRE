@@ -2,6 +2,7 @@
 // Containers
 // ----------
 .container {
+    $container-vert-padding-mbl: 25px;
 	$container-vert-padding: 75px;
 
 	// ---------------
@@ -11,20 +12,48 @@
 
 	@include child(full-width) {
 		@extend %clearfix;
-		width: 100%;
+		padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        
+        @include mediaquery(massive) {
+            padding-left: 0;
+            padding-right: 0;
+        }
 	}
 
 	@include child(1000) {
 		@include container(1000px);
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include mediaquery(massive) {
+            padding-left: 0;
+            padding-right: 0;
+        }
 	}
 
 
 	// -----------------
 	// Container Padding
 	// -----------------
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include mediaquery(massive) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 	@include child(vert-padding) {
-		padding-bottom: $container-vert-padding;
-		padding-top: $container-vert-padding;
+        padding-bottom: $container-vert-padding-mbl;
+		padding-top: $container-vert-padding-mbl;
+
+        @include mediaquery(large) {
+		    padding-bottom: $container-vert-padding;
+		    padding-top: $container-vert-padding;
+        }
 	}
 
 
@@ -90,7 +119,10 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 350px;
+		
+        @include mediaquery(tabletPlus) {
+            min-height: 350px;
+        }
 	}
 
 	@include child(bg-austin) {
@@ -127,31 +159,48 @@
 	// ----------------
 	@include child(cols-2) {
 		.col {
-			&:first-child {
-				@include span(7);
-			}
+            @include full;
+            margin-bottom: gutter() * 2;
 
-			&:nth-child(2n) {
-				@include span(5);
-			}
+            @include mediaquery(large) {
+                @include nobreak;
+                margin-bottom: 0;
+
+			    &:first-child {
+			    	@include span(7);
+			    }
+
+			    &:nth-child(2n) {
+			    	@include span(5);
+			    }
+            }
 		}
 	}
 
     @include child(cols-2-eq) {
 		.col {
-			&:first-child {
-				@include span(6);
-			}
+            @include full;
 
-			&:nth-child(2n) {
-				@include span(6);
-			}
+            @include mediaquery(large) {
+			    &:first-child {
+				    @include span(6);
+			    }
+
+			    &:nth-child(2n) {
+				    @include span(6);
+			    }
+            }
 		}
 	}
 
 	@include child(cols-3) {
 		.col {
-			@include span(4);
+            @include full;
+
+            @include mediaquery(large) {
+                @include nobreak;
+                @include span(4);
+            }
 		}
 	}
 

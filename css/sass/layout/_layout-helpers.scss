@@ -2,7 +2,11 @@
 // Primary content wrapper
 // -----------------------
 #contentWrapper {
-	padding-top: 80px;
+	padding-top: 49px;
+
+    @include mediaquery(large) {
+        padding-top: 80px;
+    }
 
 	&.home,
 	&.about,
@@ -10,12 +14,16 @@
     &.contact {
 		background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.webp');
 		background-attachment: fixed;
-		background-position: center 80px;
+		background-position: center 49px;
 		background-repeat: no-repeat;
 
 		.no-webp & {
 			background-image: url('//static.select-interactive.com/CRE/img/skylines/med/dallas.v1.jpg');
 		}
+
+        @include mediaquery(large) {
+            background-position: center 80px;
+        }
 
 		@include mediaquery(massive) {
 			background-image: url('//static.select-interactive.com/CRE/img/skylines/large/dallas.v1.webp');
@@ -99,7 +107,11 @@
 
 	p,
 	li {
-		font-size: em(18px);
+		font-size: em(16px);
 		line-height: 1.35;
+
+        @include mediaquery(tabletPlus) {
+            font-size: em(18px);
+        }
 	}
 }

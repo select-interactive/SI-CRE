@@ -9,3 +9,4 @@
         <li class="no-bars">T. <a href="tel:817.210.4303">817.210.4303</a></li>
     </ul>
 </nav>
+<a href="#" id="nav-trigger" class="fa fa-bars"></a>

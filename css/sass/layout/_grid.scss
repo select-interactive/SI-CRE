@@ -57,6 +57,11 @@ $bp-phone-port: 320px;
 		@media (max-width: ($bp-large - 1) / $base-font-size + 'em') { @content; }
 	}
 
+    // portrait tablets and up 768+
+	@if $point == mblBigger {
+		@media (min-width: $bp-mbl-bigger / $base-font-size + 'em') { @content; }
+	}
+
 	// Retina Screens
 	@if $point == retina {
 		@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) { @content; }

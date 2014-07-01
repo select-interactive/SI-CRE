@@ -6,12 +6,15 @@
 	font-size: em(15px);
 
 	.col {
-		border-left: 1px solid $si-gray-darker;
 		padding: 10px gutter() * 2;
 
-		&:first-child {
-			border-left: 0;
-		}
+		@include mediaquery(large) {
+            border-left: 1px solid $si-gray-darker;
+
+            &:first-child {
+			    border-left: 0;
+		    }
+        }
 	}
 
 	a {

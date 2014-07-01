@@ -73,10 +73,13 @@ button,
 		border: 1px solid $si-orange;
 		border-radius: 4px;
 		color: $white;
-		font-size: em(30px);
+		font-size: em(24px);
 		line-height: 1;
 		padding: 15px 35px;
-		
+
+        @include mediaquery(tabletPlus) {
+            font-size: em(30px);
+        }	
 		
 		&:hover {
 			background: darken($si-orange, 5%);

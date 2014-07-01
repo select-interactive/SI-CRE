@@ -1,10 +1,10 @@
 ﻿.slides {
 	@extend %position-relative;
-	min-height: 350px;
 	overflow: hidden;
 
 	@include child(arrows) {
-		@extend %position-absolute;
+        @extend %display-none;
+        @extend %position-absolute;
 
 		background: url('//static.select-interactive.com/CRE/img/arrows.v1.png') no-repeat 0 0;
 		height: 160px;
@@ -19,6 +19,10 @@
 			@include opacity(1);
 		}
 
+        @include mediaquery(tabletPlus) {
+            display: inline-block;
+        }
+
 		@include child(prev) {
 			left: 0;
 		}
@@ -28,10 +32,16 @@
 			right: 0;
 		}
 	}
+
+    @include mediaquery(tabletPlus) {
+        min-height: 350px;
+    }
 }
 
 .slide {
 	@extend %position-absolute;
+
+    padding: 0 15px;
 
 	@include transform(translateX(100%));
 	@include transition(transform .5s ease-in-out);
