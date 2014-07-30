@@ -35,15 +35,17 @@
             <div class="col eq-height-item">
                 <h4 class="heading heading-secondary mb-0">Individual Property Projects</h4>
                 <ul class="list-basic list-arrows copy-default">
+                    <li><a href="http://www.fairwindstower.com" target="_blank">www.fairwindstower.com</a></li>
                     <li><a href="http://www.regionsplaza.com" target="_blank">www.regionsplaza.com</a></li>
+                    <li><a href="http://www.contactpointelakemary.com" target="_blank">www.contactpointelakemary.com</a></li>
                     <li><a href="http://www.bbvacompassplaza.com" target="_blank">www.bbvacompassplaza.com</a></li>
                     <li><a href="http://www.trammellcrowcenter.com" target="_blank">www.trammellcrowcenter.com</a></li>
+                    <li><a href="http://www.liveoaksquare.com" target="_blank">www.liveoaksquare.com</a></li>
                     <li><a href="http://www.satellite-place.com" target="_blank">www.satellite-place.com</a></li>
                     <li><a href="http://www.lenoxtowersbuckhead.com" target="_blank">www.lenoxtowersbuckhead.com</a></li>
                     <li><a href="http://www.upaustin.com" target="_blank">www.upaustin.com</a></li>
                     <li><a href="http://www.hiddengrovedallas.com/" target="_blank">www.hiddengrovedallas.com</a></li>
                     <li><a href="http://www.oilgas-startelegram.com/" target="_blank">www.oilgas-startelegram.com</a></li>
-
                 </ul>
                 <h4 class="heading heading-secondary mb-0">Related Real Estate Projects</h4>
                 <ul class="list-basic list-arrows copy-default">
