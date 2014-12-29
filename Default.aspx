@@ -64,12 +64,12 @@
         <div class="container">
             <div class="projects">
                 <div class="project">
-                    <a href="http://www.regionsplaza.com" target="_blank">
+                    <a href="http://www.liveoaksquare.com" target="_blank">
                         <div class="project-img">
                             <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
-                            <img src="//static.select-interactive.com/CRE/img/projects/thumbs/regions-plaza.v1.jpg" />
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/los.v1.webp", "jpg")%>" width="650" height="400" alt="Live Oak Square" />
                         </div>
-                        <h3 class="project-name">Regions Plaza</h3>
+                        <h3 class="project-name">Live Oak Square</h3>
                         <div class="project-location">Atlanta, GA</div>
                     </a>
                 </div>
@@ -77,30 +77,70 @@
                     <a href="http://www.trammellcrowcenter.com" target="_blank">
                         <div class="project-img">
                             <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
-                            <img src="//static.select-interactive.com/CRE/img/projects/thumbs/trammell-crow-center.v1.jpg" />
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/trammell-crow-center.v1.webp", "jpg")%>" width="650" height="400" alt="Trammell Crow Center" />
                         </div>
                         <h3 class="project-name">Trammell Crow Center</h3>
                         <div class="project-location">Dallas, TX</div>
                     </a>
                 </div>
                 <div class="project">
+                    <a href="http://www.regionsplaza.com" target="_blank">
+                        <div class="project-img">
+                            <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/regions-plaza.v1.webp", "jpg")%>" width="650" height="400" alt="Regions Plaza" />
+                        </div>
+                        <h3 class="project-name">Regions Plaza</h3>
+                        <div class="project-location">Atlanta, GA</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="http://www.fairwindstower.com" target="_blank">
+                        <div class="project-img">
+                            <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/fairwinds.v1.webp", "jpg")%>" width="650" height="400" alt="Live Oak Square" />
+                        </div>
+                        <h3 class="project-name">Fairwinds Tower</h3>
+                        <div class="project-location">Orlando, FL</div>
+                    </a>
+                </div>
+                <div class="project">
                     <a href="http://www.bbvacompassplaza.com" target="_blank">
                         <div class="project-img">
                             <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
-                            <img src="//static.select-interactive.com/CRE/img/projects/thumbs/bbva-compass-plaza.v1.jpg" />
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/bbva-compass-plaza.v1.webp", "jpg")%>" width="650" height="400" alt="BBVA Compass Plaza" />
                         </div>
                         <h3 class="project-name">BBVA Compass Plaza</h3>
                         <div class="project-location">Houston, TX</div>
                     </a>
                 </div>
                 <div class="project">
+                    <a href="http://www.contactpointelakemary.com" target="_blank">
+                        <div class="project-img">
+                            <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/contact-pointe.v1.webp", "jpg")%>" width="650" height="400" alt="Live Oak Square" />
+                        </div>
+                        <h3 class="project-name">Contact Pointe</h3>
+                        <div class="project-location">Orlando, FL</div>
+                    </a>
+                </div>
+                <div class="project">
                     <a href="http://www.lenoxtowersbuckhead.com" target="_blank">
                         <div class="project-img">
                             <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
-                            <img src="//static.select-interactive.com/CRE/img/projects/thumbs/lenox-towers.v1.jpg" />
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/lenox-towers.v1.webp", "jpg")%>" width="650" height="400" alt="Lenox Towers Buckhead" />
                         </div>
                         <h3 class="project-name">Lenox Towers Buckhead</h3>
                         <div class="project-location">Atlanta, GA</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="http://www.400w15th.com" target="_blank">
+                        <div class="project-img">
+                            <div class="project-overlay"><span class="project-overlay-msg">View Project</span></div>
+                            <img src="<%= (New SI_UTIL).getImg("CRE/img/projects/thumbs/400w.v1.webp", "jpg")%>" width="650" height="400" alt="Live Oak Square" />
+                        </div>
+                        <h3 class="project-name">400 W. 15th St.</h3>
+                        <div class="project-location">Austin, TX</div>
                     </a>
                 </div>
             </div>

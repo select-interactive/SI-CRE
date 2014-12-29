@@ -71,9 +71,9 @@
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
-                <a class="slide-component" href="http://www.satellite-place.com/gallery/" target="_blank">
+                <a class="slide-component" href="http://www.fairwindstower.com/gallery/" target="_blank">
                     <div class="slide-component-overlay slide-component-overlay-white"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/satellite-place.v2.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/photo/fairwinds-tower.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
@@ -93,15 +93,21 @@
         </div>
         <div class="slides text-center eq-height-item">
             <div class="slide slide-center eq-height-item">
+                <a class="slide-component" href="http://www.liveoaksquare.com/location/" target="_blank">
+                    <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/los.v1.webp", "png")%>" />
+                </a>
+            </div>
+            <div class="slide slide-right eq-height-item">
                 <a class="slide-component" href="http://www.trammellcrowcenter.com/amenities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
                     <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/trammell-crow-center.v2.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
-                <a class="slide-component" href="http://www.satellite-place.com/amenities/" target="_blank">
+                <a class="slide-component" href="http://www.contactpointelakemary.com/amenities/" target="_blank">
                     <div class="slide-component-overlay"><span class="slide-component-label">View Project</span></div>
-                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/satellite-place.v2.webp", "png")%>" />
+                    <img src="<%= (New SI_UTIL).getImg("CRE/img/components/amenities/contact-pointe.v1.webp", "png")%>" />
                 </a>
             </div>
             <div class="slide slide-right eq-height-item">
