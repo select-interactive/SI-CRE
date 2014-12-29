@@ -8,10 +8,10 @@
                 <li><a href="mailto:contact@select-interactive.com">contact@select-interactive.com</a></li>
                 <li>3343 Locke Ave. Suite 107<br />Fort Worth, TX 76107</li>
                 <li>
-                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                    <a href="https://www.facebook.com/SelectInteractive" class="fa fa-facebook-square"></a>
-                    <a href="https://plus.google.com/+Select-interactive/posts" class="fa fa-google-plus"></a>
-                    <a href="http://g.co/maps/529t3" target="_blank" class="fa fa-map-marker"></a>
+                    <a target="_blank" href="https://twitter.com/sel_interactive" class="fa fa-twitter"></a>
+                    <a target="_blank" href="https://www.facebook.com/SelectInteractive" class="fa fa-facebook-square"></a>
+                    <a target="_blank" href="https://plus.google.com/+Select-interactive/posts" class="fa fa-google-plus"></a>
+                    <a target="_blank" href="http://g.co/maps/529t3" target="_blank" class="fa fa-map-marker"></a>
                 </li>
             </ul>
         </div>
