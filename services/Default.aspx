@@ -36,6 +36,7 @@
                 <h4 class="heading heading-secondary mb-0">Individual Property Projects</h4>
                 <ul class="list-basic list-arrows copy-default">
                     <li><a href="http://www.liveoaksquare.com" target="_blank">www.liveoaksquare.com</a></li>
+					<li><a href="http://www.1776peachtree.com" target="_blank">www.1776peachtree.com</a></li>
                     <li><a href="http://www.fairwindstower.com" target="_blank">www.fairwindstower.com</a></li>
                     <li><a href="http://www.regionsplaza.com" target="_blank">www.regionsplaza.com</a></li>
                     <li><a href="http://www.contactpointelakemary.com" target="_blank">www.contactpointelakemary.com</a></li>
@@ -49,6 +50,7 @@
                 </ul>
                 <h4 class="heading heading-secondary mb-0">Related Real Estate Projects</h4>
                 <ul class="list-basic list-arrows copy-default">
+					<li><a href="http://www.fritscheanderson.com" target="_blank">www.fritscheanderson.com</a></li>
                     <li><a href="http://www.williamstrew.com" target="_blank">www.williamstrew.com</a></li>
                     <li><a href="http://www.openra.com" target="_blank">www.openra.com</a></li>
                     <li><a href="http://www.hudsonpeters.com" target="_blank">www.hudsonpeters.com</a></li>
